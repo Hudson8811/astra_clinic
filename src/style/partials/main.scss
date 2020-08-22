@@ -7,8 +7,10 @@ body {
 	max-width: 100%;
 	height: 100%;
 }
-input, button {
-    -webkit-appearance: none;
+
+input,
+button {
+	-webkit-appearance: none;
 }
 
 input,
@@ -28,22 +30,36 @@ body {
 	flex-direction: column;
 	margin: 0;
 	color: #323340;
-	background: #ffffff;
-	background: cyan;
+	background: #F5F3F1;
 	font-size: 16px;
 	font-family: $ffg;
 }
 
 .main {
 	flex-grow: 1;
+
+	@include _min1501 {
+		margin-left: 359px;
+	}
 }
 
 .container {
 	box-sizing: border-box;
-	width: 1216px;
+	width: 1138px;
 	max-width: 95%;
 	max-width: calc(100% - 60px);
 	margin: 0 auto;
+
+	&--dpr {
+		@media (min-width:1700px) {
+			padding-right: 215px !important;
+			width: 1263px !important;
+		}
+	}
+
+	@include _600 {
+		max-width: calc(100% - 30px);
+	}
 }
 
 
@@ -60,29 +76,34 @@ body {
 }
 
 
-.svg-def-color{
-	&-football{
+.svg-def-color {
+	&-football {
 		fill: #009A06;
 		stroke: #009A06;
 	}
-	&-tennis{
+
+	&-tennis {
 		fill: #E8B500;
 		stroke: #E8B500;
 	}
-	&-hockey{
+
+	&-hockey {
 		fill: #1D88B6;
 		stroke: #1D88B6;
 	}
-	&-volleyball{
+
+	&-volleyball {
 		fill: #242A76;
 		stroke: #242A76;
 	}
-	&-basketball{
+
+	&-basketball {
 		fill: #E57E25;
 		stroke: #E57E25;
 	}
-	&-others{
-			fill: #0E3770;
-			stroke: #0E3770;
+
+	&-others {
+		fill: #0E3770;
+		stroke: #0E3770;
 	}
 }

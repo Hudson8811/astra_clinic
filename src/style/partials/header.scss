@@ -64,6 +64,10 @@
 			height: 37px;
 			width: auto;
 		}
+
+		@include _min1501 {
+			height: 66px;
+		}
 	}
 
 	@include _1500 {
@@ -292,9 +296,9 @@ img {}
 		}
 
 		&--mobile-active {
-			max-height: calc(99vh - 106px);
-			height: calc(99vh - 106px);
-			padding: 38px 55px;
+			max-height: calc(100vh - 106px);
+			height: calc(100vh - 106px);
+			padding: 38px 10px 0 55px;
 
 
 		}
@@ -302,8 +306,14 @@ img {}
 
 	@include _768 {
 		&--mobile-active {
-			max-height: calc(99vh - 64px);
-			height: calc(99vh - 64px);
+			max-height: calc(100vh - 64px);
+			height: calc(100vh - 64px);
+		}
+	}
+
+	@include _350 {
+		&--mobile-active {
+			padding: 20px 15px 0;
 		}
 	}
 
@@ -459,25 +469,33 @@ img {}
 			height: unset;
 			max-width: 500px;
 			position: absolute;
-			margin-left: -140px;
+			margin-left: -164px;
 			top: 106px;
 			padding: 50px 56px;
 		}
 	}
 
 	@include _979 {
+		height: 100%;
+		display: block;
 		left: 0;
 		margin-left: 0;
 		position: absolute !important;
 		top: 0;
 		z-index: 51;
 		background: #ffffff;
-		padding: 38px 55px;
-		&--mobile-active{
+		padding: 38px 10px 0 55px;
 
-		opacity: 1;
-		pointer-events: all;
+		&--mobile-active {
+
+			opacity: 1;
+			pointer-events: all;
 		}
+	}
+
+	@include _350 {
+
+		padding: 20px 15px 0;
 	}
 }
 
@@ -508,11 +526,16 @@ img {}
 		&:active {}
 
 		&:focus {}
+
+		@include _979 {}
+
+		@include _350 {
+
+			font-size: 20px;
+			line-height: 1.2;
+		}
 	}
 
-	@include _min1501 {}
-
-	@include _1500 {}
 
 
 }
@@ -539,7 +562,13 @@ img {}
 	@include _979 {
 		height: 100%;
 
-		padding: 38px 55px;
+		padding: 38px 10px 0 55px;
+
+	}
+
+	@include _350 {
+
+		padding: 20px 15px 0;
 	}
 }
 
@@ -594,20 +623,29 @@ img {}
 		transition-duration: .2s;
 
 		&:hover {
-			background: #C31D1F;
+			@include _min980 {
 
-			.hmm-sub-service__pic {
-				background: #FFFFFF;
+				background: #C31D1F;
 
-				svg {
-					path {
-						fill: #C31D1F;
+				.hmm-sub-service__pic {
+					background: #FFFFFF;
+
+					svg {
+						path {
+							fill: #C31D1F;
+						}
 					}
+				}
+
+				.hmm-sub-service__name {
+					color: #ffffff;
 				}
 			}
 
-			.hmm-sub-service__name {
-				color: #ffffff;
+			@include _979 {
+				.hmm-sub-service__name {
+					color: #c31d1f;
+				}
 			}
 		}
 
@@ -683,9 +721,10 @@ img {}
 		&:not(:nth-child(5n)) {
 			border: none;
 		}
-		&+li{
 
-			margin-top: 13px;
+		&+li {
+
+			margin-top: 1px;
 		}
 	}
 }
@@ -731,7 +770,8 @@ img {}
 		color: #615756;
 		margin-top: 0;
 		font-weight: 400;
-		br{
+
+		br {
 			display: none;
 		}
 	}
@@ -854,3 +894,24 @@ img {}
 
 	}
 }
+
+.header-ph {
+	@include _min1501 {
+		display: none !important;
+	}
+
+	height: 106px;
+	min-height: 106px;
+
+	@include _979 {
+		height: 168px;
+		min-height: 168px;
+	}
+
+	@include _768 {
+		height: 120px;
+		min-height: 120px;
+
+	}
+}
+

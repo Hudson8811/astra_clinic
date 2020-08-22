@@ -13,7 +13,10 @@ var gulp = require('gulp'),
 	rimraf = require('rimraf'),
 	reload = browserSync.reload,
 	svgSprite = require('gulp-svg-sprite'),
-	pug = require('gulp-pug');
+	pug = require('gulp-pug'),
+	svgmin = require('gulp-svgmin'),
+	cheerio = require('gulp-cheerio'),
+	replace = require('gulp-replace');
 
 var postcss = require('gulp-postcss');
 
@@ -142,6 +145,20 @@ gulp.task('img:build', function () {
 
 gulp.task('svgSprite:build', function () {
 	return gulp.src(path.src.svg)
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: {xmlMode: true}
+		}))
+		.pipe(svgmin({
+			js2svg: {
+				pretty: true
+			}
+		}))
+		.pipe(replace('&gt;', '>'))
 		.pipe(svgSprite({
 			mode: {
 				stack: {
@@ -149,6 +166,7 @@ gulp.task('svgSprite:build', function () {
 				}
 			},
 		}))
+
 		.pipe(gulp.dest(path.build.svg));
 });
 

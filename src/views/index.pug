@@ -10,4 +10,155 @@ block vars
 
 
 block main
+	section.hp-banner#hp-banner
+		video.hp-banner-vidbg#hp-banner-vidbg(loop muted controls="")
+			//autoplay
+			source(src="images/videotest.mp4")
+		.hp-banner-picbg#hp-banner-picbg
+			img(src="images/hpb-video-ph.jpg", alt="")
+		.container.container--hp-banner
+			.hp-banner__titles
+				h1.hp-banner__small-title Стоматология в Санкт-Петербурге «Астра»
+				.hp-banner__big-title Петербургский
+					br
+					|  стиль во всём
+
+			.hp-banner__play.js-hp-banner__play
+				svg(width='106' height='106' viewbox='0 0 106 106' fill='none' xmlns='http://www.w3.org/2000/svg')
+					circle(cx='53' cy='53' r='52.5' stroke='white')
+					path(fill-rule='evenodd' clip-rule='evenodd' d='M53 97C77.3005 97 97 77.3005 97 53C97 28.6995 77.3005 9 53 9C28.6995 9 9 28.6995 9 53C9 77.3005 28.6995 97 53 97ZM43.5 69.4545L72 53L43.5 36.5455V69.4545Z' fill='white')
+			.hpb-clinics
+				.hpb-clinic
+					.hpb-clinic__img
+						img(src="img/logo_adm.svg", alt="")
+					.hpb-clinic__name Адмиралтейская
+					a.hpb-clinic__phone(href="") +7 812-331-66-66
+				.hpb-clinic
+					.hpb-clinic__img
+						img(src="img/logo_tech.svg", alt="")
+					.hpb-clinic__name Технологический институт
+					a.hpb-clinic__phone(href="") +7 812-337-66-66
+				.hpb-clinic
+					.hpb-clinic__img
+						img(src="img/logo_poly.svg", alt="")
+					.hpb-clinic__name Политехническая
+					a.hpb-clinic__phone(href="") +7 812-331-66-66
+
+
+			.hpb-scrollme
+				svg(width='8' height='42' viewbox='0 0 8 42' fill='none' xmlns='http://www.w3.org/2000/svg')
+					path(d='M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35356 41.3536L7.53554 38.1716C7.7308 37.9763 7.7308 37.6597 7.53554 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.65973 37.2692 0.464468 37.4645C0.269205 37.6597 0.269205 37.9763 0.464468 38.1716L3.64645 41.3536ZM3.5 4L3.5 41L4.5 41L4.5 4L3.5 4Z' fill='white')
+					circle(cx='4' cy='3' r='3' fill='white')
+
+	section.stomat-services
+		.container.container--dpr
+			h2.h2.h2--ssrv  Стоматологические услуги
+			.ssrv-wrap
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/tablet.svg", alt="")
+					.ssrv-item__name Установка
+						br
+						|  виниров
+					.ssrv-item__price от 22 000 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/heart.svg", alt="")
+					.ssrv-item__name Протезирование
+						br
+						|   зубов
+					.ssrv-item__price от 22 000 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/tablet.svg", alt="")
+					.ssrv-item__name Имплантация
+						br
+						|   зубов
+					.ssrv-item__price от 20 500 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/microscope.svg", alt="")
+					.ssrv-item__name Пародонтология
+					.ssrv-item__price от 2 950 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/tooth.svg", alt="")
+					.ssrv-item__name Отбеливание
+						br
+						|   зубов
+					.ssrv-item__price от 9 000 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/termo.svg", alt="")
+					.ssrv-item__name Ортодонтия
+					.ssrv-item__price от 32 000 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/syringe.svg", alt="")
+					.ssrv-item__name Удаление
+						br
+						|   зубов
+					.ssrv-item__price от 800 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/microscope.svg", alt="")
+					.ssrv-item__name Детская
+						br
+						|   стоматология
+					.ssrv-item__price от 2 200 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/termo.svg", alt="")
+					.ssrv-item__name Чистка
+						br
+						|   зубов
+					.ssrv-item__price от 6 500 ₽
+				a.ssrv-item(href="")
+					.ssrv-item__pic
+						img(src="img/tablet.svg", alt="")
+					.ssrv-item__name Лечение
+						br
+						|   кариеса
+					.ssrv-item__price от 1 450 ₽
+	.section-separator
+
+	section.posts-and-digits
+		.container.container--pad
+			.pad-posts
+				.pad-posts-item
+					.pad-posts-item__pic
+						img(src="images/image_6post.jpg", alt="")
+					.pad-posts-item__text
+						.pad-posts-item__title Рейтинг частных медицинских клиник Санкт-Петербурга
+						.pad-posts-item__desc 3-е место в 8-ом рейтинге частных медицинских клиник Санкт-Петербурга, проведеннном журналом «Город 812», в номинации «Стоматология премиум-класса»
+						a.pad-posts-item__more(href="") Читать подробнее
+				.pad-posts-item
+					.pad-posts-item__pic
+						img(src="images/image_6post.jpg", alt="")
+					.pad-posts-item__text
+						.pad-posts-item__title Ежегодный Всероссийский Рейтинг стоматологических клиник
+						.pad-posts-item__desc 3-е место в 8-ом рейтинге частных медицинских клиник Санкт-Петербурга, проведеннном журналом «Город 812», в номинации «Стоматология премиум-класса»
+						a.pad-posts-item__more(href="") Читать подробнее
+			.pad-digits
+				.pad-digits-item
+					.pad-digits-item__left
+						.pad-digits-item__symbol с
+					.pad-digits-item__right
+						.pad-digits-item__digit 1998
+						.pad-digits-item__type года
+						.pad-digits-item__desc Мы заботимся о здоровье и красивой улыбке наших пациентов.
+				.pad-digits-item
+					.pad-digits-item__left
+						.pad-digits-item__symbol >
+					.pad-digits-item__right
+						.pad-digits-item__digit 30
+						.pad-digits-item__type врачей
+						.pad-digits-item__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				.pad-digits-item
+					.pad-digits-item__left
+						.pad-digits-item__symbol >
+					.pad-digits-item__right
+						.pad-digits-item__digit 12 000
+						.pad-digits-item__type пациентов
+						.pad-digits-item__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
