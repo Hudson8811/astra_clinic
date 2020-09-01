@@ -348,7 +348,9 @@ $(document).ready(function () {
             var cat = $(this).data('cat');
             if(cat !== 'all'){
                 specialsSlider.slick('slickUnfilter');
-                specialsSlider.slick('slickFilter', '.specials__slide[data-cat='+ cat +']');
+                specialsSlider.slick('slickFilter', function(index, elem) {
+                    return $(elem).find('.specials__slide').attr('data-cat') == cat;
+                });
             } else{
                 specialsSlider.slick('slickUnfilter');
             }
