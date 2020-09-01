@@ -34,4 +34,26 @@ $(document).ready(function () {
     $(window).resize(setVideoCenter);
 
 
+    if ($('.history__slider').length > 0){
+        var historySlider = $('.history__slider');
+
+        historySlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            if (i < 10) i = '0' + i;
+            var ii = slick.slideCount;
+            if (ii < 10) ii = '0' + ii;
+            $('.hs-control__counter').html('<span>'+ i + '</span>' + '/' + ii);
+        });
+
+        historySlider.slick({
+            autoplay: false,
+            dots: true,
+            arrows:true,
+            infinite:false,
+            appendArrows: $('.hs-control__arrows'),
+            prevArrow: $('.hs-control__left'),
+            nextArrow: $('.hs-control__right'),
+            appendDots: $('.hs-control__dots'),
+        });
+    }
 });

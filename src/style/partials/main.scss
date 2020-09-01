@@ -52,7 +52,7 @@ body {
 
 	&--dpr {
 		@media (min-width:1700px) {
-			padding-right: 215px !important;
+			padding-right: 125px !important;
 			width: 1263px !important;
 		}
 	}
@@ -75,35 +75,9 @@ body {
 	display: none;
 }
 
-
-.svg-def-color {
-	&-football {
-		fill: #009A06;
-		stroke: #009A06;
-	}
-
-	&-tennis {
-		fill: #E8B500;
-		stroke: #E8B500;
-	}
-
-	&-hockey {
-		fill: #1D88B6;
-		stroke: #1D88B6;
-	}
-
-	&-volleyball {
-		fill: #242A76;
-		stroke: #242A76;
-	}
-
-	&-basketball {
-		fill: #E57E25;
-		stroke: #E57E25;
-	}
-
-	&-others {
-		fill: #0E3770;
-		stroke: #0E3770;
-	}
+.ta-center{
+	text-align: center;
+}
+.s-pad{
+	padding: 64px 0 72px;
 }

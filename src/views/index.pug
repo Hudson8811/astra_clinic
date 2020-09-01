@@ -50,6 +50,7 @@ block main
 					path(d='M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35356 41.3536L7.53554 38.1716C7.7308 37.9763 7.7308 37.6597 7.53554 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.65973 37.2692 0.464468 37.4645C0.269205 37.6597 0.269205 37.9763 0.464468 38.1716L3.64645 41.3536ZM3.5 4L3.5 41L4.5 41L4.5 4L3.5 4Z' fill='white')
 					circle(cx='4' cy='3' r='3' fill='white')
 
+
 	section.stomat-services
 		.container.container--dpr
 			h2.h2.h2--ssrv  Стоматологические услуги
@@ -120,9 +121,10 @@ block main
 						br
 						|   кариеса
 					.ssrv-item__price от 1 450 ₽
-	.section-separator
 
-	section.posts-and-digits
+	.section-separator.container.container--dpr
+
+	section.s-pad.posts-and-digits
 		.container.container--pad
 			.pad-posts
 				.pad-posts-item
@@ -134,7 +136,7 @@ block main
 						a.pad-posts-item__more(href="") Читать подробнее
 				.pad-posts-item
 					.pad-posts-item__pic
-						img(src="images/image_6post.jpg", alt="")
+						img(src="images/image_7post.jpg", alt="")
 					.pad-posts-item__text
 						.pad-posts-item__title Ежегодный Всероссийский Рейтинг стоматологических клиник
 						.pad-posts-item__desc 3-е место в 8-ом рейтинге частных медицинских клиник Санкт-Петербурга, проведеннном журналом «Город 812», в номинации «Стоматология премиум-класса»
@@ -162,3 +164,37 @@ block main
 						.pad-digits-item__type пациентов
 						.pad-digits-item__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
+
+	.section-separator.container.container--dpr
+
+	section.s-pad.histories
+		.container.container--dpr
+			h2.h2.ta-center  Истории наших пациентов
+			.history__container
+				.history__slider
+					- var n = 0;
+					while n < 3
+						- n++
+						.history__item
+							.history__left
+								.history__title История #1
+								.history__name Егорова <span>Светлана</span>
+								.history__cats
+									a(href="") Протезирование зубов
+									| ,
+									a(href="") установка виниров
+								.history__desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+							.history__right
+								img.history__img(src="images/history.jpg")
+				.hs-control
+					.hs-control__counter
+					.hs-control__dots
+					.hs-control__arrows
+						.hs-control__arrow.hs-control__left
+							<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.3848 1.41421L16.9706 0L1.85966e-05 16.9706L16.9706 33.9411L18.3848 32.5269L2.82845 16.9706L18.3848 1.41421Z"/>
+							</svg>
+						.hs-control__arrow.hs-control__right
+							<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.556368 1.41421L1.97058 0L18.9411 16.9706L1.97058 33.9411L0.556368 32.5269L16.1127 16.9706L0.556368 1.41421Z"/>
+							</svg>
