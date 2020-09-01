@@ -329,4 +329,30 @@ $(document).ready(function () {
             appendDots: $('.hs-control__dots'),
         });
     }
+
+    if ($('.specials__slider').length > 0){
+        var specialsSlider = $('.specials__slider');
+
+        specialsSlider.slick({
+            autoplay: false,
+            dots: false,
+            arrows:false,
+            infinite:false,
+            adaptiveHeight: true
+        });
+
+        $('.specials__filter').on('click', function(){
+            $('.specials__filter').removeClass('active');
+            $(this).addClass('active');
+
+            var cat = $(this).data('cat');
+            if(cat !== 'all'){
+                specialsSlider.slick('slickUnfilter');
+                specialsSlider.slick('slickFilter', '.specials__slide[data-cat='+ cat +']');
+            } else{
+                specialsSlider.slick('slickUnfilter');
+            }
+        });
+
+    }
 });
