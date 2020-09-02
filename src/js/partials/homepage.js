@@ -84,4 +84,35 @@ $(document).ready(function () {
         });
 
     }
+
+
+    if ($('.doctors__slider').length > 0){
+        var doctorsSlider = $('.doctors__slider');
+
+        doctorsSlider.slick({
+            autoplay: false,
+            dots: true,
+            arrows:false,
+            infinite:false,
+            adaptiveHeight: false,
+            slidesToShow: 5,
+            slidesToScroll: 5
+        });
+
+        $('.doctors__filter').on('click', function(){
+            $('.doctors__filter').removeClass('active');
+            $(this).addClass('active');
+
+            var cat = $(this).data('cat');
+            if(cat !== 'all'){
+                doctorsSlider.slick('slickUnfilter');
+                doctorsSlider.slick('slickFilter', function(index, elem) {
+                    return $(elem).find('.doctors__item').attr('data-cat') == cat;
+                });
+            } else{
+                doctorsSlider.slick('slickUnfilter');
+            }
+        });
+
+    }
 });
