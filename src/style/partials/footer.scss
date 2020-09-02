@@ -1,0 +1,37 @@
+.footer{
+  padding: 30px 0;
+  background: #ffffff;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    display: flex;
+    align-items: center;
+  }
+  &__copy{
+    font-size: 16px;
+    color: #878183;
+    margin-right: 56px;
+  }
+  &__politic{
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #878183;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__dev{
+    display: flex;
+    align-items: center;
+    span{
+      font-size: 16px;
+      color: #878183;
+    }
+    img{
+      margin-left: 16px;
+    }
+  }
+}

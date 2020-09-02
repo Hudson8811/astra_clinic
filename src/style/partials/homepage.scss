@@ -1081,3 +1081,127 @@
 		color: #13070C;
 	}
 }
+
+
+.map{
+	&__container{
+		margin-top: 48px;
+		display: flex;
+		min-height: 557px;
+		background: #ffffff;
+	}
+	&__left{
+		width: calc(100% - 351px);
+	}
+	&__right{
+		width: 351px;
+		flex-shrink: 0;
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		box-sizing: border-box;
+	}
+	&__item{
+		&+ .map__item{
+			margin-top: 12px;
+		}
+
+		&:nth-child(1){
+			.map__title.active span{ color: #6C2A81; }
+		}
+		&:nth-child(2){
+			.map__title.active span{ color: #1B73B2; }
+		}
+		&:nth-child(3){
+			.map__title.active span{ color: #E01A4D; }
+		}
+	}
+	&__title{
+		border-bottom: 1px solid #C9C1C4;
+		padding: 12px 0;
+		display: flex;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		img{
+			margin-right: 12px;
+			width: 24px;
+			height: 24px;
+			object-fit: contain;
+			display: block;
+		}
+		span{
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 21px;
+			color: #13070C;
+		}
+
+		&::after{
+			content: "";
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: url("../img/arrow_down.svg") center center no-repeat;
+			background-size: contain;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -7px;
+		}
+
+		&.active{
+			&::after{
+				transform: rotate(180deg);
+			}
+
+			&+ .map__content{
+				display: block;
+			}
+		}
+	}
+	&__content{
+		display: none;
+		padding: 24px 0;
+	}
+	&__address{
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 135%;
+		color: #13070C;
+	}
+	&__comment{
+		color: #878183;
+		font-size: 16px;
+		line-height: 135%;
+		margin-top: 5px;
+	}
+	&__phones{
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #13070C;
+		column-count: 2;
+		margin-top: 16px;
+	}
+	&__email{
+		margin-top: 16px;
+		a{
+			font-size: 16px;
+			line-height: 150%;
+			text-decoration-line: underline;
+			color: #C31D1F;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	&__time{
+		margin-top: 16px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #13070C;
+	}
+}

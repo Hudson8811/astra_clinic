@@ -113,6 +113,19 @@ $(document).ready(function () {
                 doctorsSlider.slick('slickUnfilter');
             }
         });
+    }
 
+    if ($('.map__title').length > 0){
+        $('.map__title').on('click', function(){
+            if ($(this).hasClass('active')){
+                $('.map__content').slideUp('fast');
+                $('.map__title').removeClass('active');
+            } else {
+                $('.map__content').slideUp('fast');
+                $('.map__title').removeClass('active');
+                $(this).siblings('.map__content').slideDown('fast');
+                $(this).addClass('active');
+            }
+        });
     }
 });
