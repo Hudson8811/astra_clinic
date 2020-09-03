@@ -24,8 +24,8 @@
         margin-top: 40px;
     }
     &__block{
-        &+ .serts-page__block{
-            margin-top: 64px;
+        &:not(:last-child){
+            margin-bottom: 64px;
         }
     }
     &__doctor{

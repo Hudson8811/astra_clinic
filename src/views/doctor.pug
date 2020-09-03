@@ -1,0 +1,27 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'histories.html'
+        };
+
+
+
+
+block main
+    .doctor-page.dp
+        .dp__first
+            .container.container--dpr.page__pad
+                include partials/_breadcrumbs
+                .dp__doctor
+                    .dp__avatar
+                        img(src="images/doctor.jpg")
+                    .dp__info
+                        .dp__name Петров Олег <br>Викторович
+                        .dp__type
+                            img(src="img/logo_adm.svg")
+                            span Адмиралтейская
+                        .dp__desc
+                            | Главный врач, директор клиники, хирург-имплантолог, кандидат медицинских наук. <br>
+                            | Стаж работы в клинике 15 лет
