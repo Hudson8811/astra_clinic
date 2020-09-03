@@ -1,0 +1,103 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'doctor-serts.html'
+        };
+
+
+
+
+block main
+    .container.container--dpr.page__pad
+        h1.h2.page__title Сертификаты врачей
+
+        include partials/_breadcrumbs
+
+        .serts-page
+
+            .page__intro
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+            .serts-page__filters.tabs
+                a.serts-page__filter.tabs__filter.active(href="javascript:;" data-cat="all") Все акции
+                a.serts-page__filter.tabs__filter(href="javascript:;" data-cat="1") Адмиралтейская
+                a.serts-page__filter.tabs__filter(href="javascript:;" data-cat="3") Политехническая
+                a.serts-page__filter.tabs__filter(href="javascript:;" data-cat="2") Тех. Институт
+
+            .serts-page__content
+                .serts-page__block(data-cat="1")
+                    .serts-page__doctor
+                        img.serts-page__avatar(src="images/doctor.jpg")
+                        .serts-page__name Петров Олег
+                    .serts-page__items
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                .serts-page__block(data-cat="3")
+                    .serts-page__doctor
+                        img.serts-page__avatar(src="images/doctor.jpg")
+                        .serts-page__name Петров Олег
+                    .serts-page__items
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                .serts-page__block(data-cat="2")
+                    .serts-page__doctor
+                        img.serts-page__avatar(src="images/doctor.jpg")
+                        .serts-page__name Петров Олег
+                    .serts-page__items
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                .serts-page__block(data-cat="1")
+                    .serts-page__doctor
+                        img.serts-page__avatar(src="images/doctor.jpg")
+                        .serts-page__name Петров Олег
+                    .serts-page__items
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
+                        .serts-page__item
+                            a(href="images/sert.jpg" data-fancybox)
+                                img(src="images/sert.jpg")
