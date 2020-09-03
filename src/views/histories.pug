@@ -1,0 +1,40 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'histories.html'
+        };
+
+
+
+
+block main
+    .container.container--dpr.page__pad
+        h1.h2.page__title Наши работы
+
+        include partials/_breadcrumbs
+
+        .history-page
+            .history-page__filters.tabs
+                a.history-page__filter.tabs__filter.active(href="javascript:;" data-cat="all") Все акции
+                a.history-page__filter.tabs__filter(href="javascript:;" data-cat="1") Адмиралтейская
+                a.history-page__filter.tabs__filter(href="javascript:;" data-cat="3") Политехническая
+                a.history-page__filter.tabs__filter(href="javascript:;" data-cat="2") Тех. Институт
+
+            .history-page__content
+                - var n = 0;
+                while n < 6
+                    - n++
+                    .history__item(data-cat="1")
+                        .history__left
+                            .history__title История #1
+                            .history__name Егорова <span>Светлана</span>
+                            .history__cats
+                                a(href="") Протезирование зубов
+                                | ,
+                                a(href="") установка виниров
+                            .history__desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            a.history__more(href="") Подробнее
+                        .history__right
+                            img.history__img(src="images/history.jpg")

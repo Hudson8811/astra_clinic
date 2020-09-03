@@ -13,14 +13,34 @@ block main
     .container.container--dpr.page__pad
         h1.h2.page__title Контакты филиалов сети клиник «Астра»
 
+        include partials/_breadcrumbs
+
         .accordion
-            .accordion__title
+            .accordion__title.accordion__title--1.active Клиника на станции метро Адмиралтейская
             .accordion__content.map
                 .map__container
                     .map__left
                     .map__right
-                        .map__content.showed
+                        .map__content
                             .map__address Наб. реки Мойки, д. 51
+                            .map__comment 5 мин. от м.Адмиралтейская, 7 мин. от м. Невский Проспект (выход на кан. Грибоедова)
+                            .map__phones
+                                div +7 812-331-66-66;
+                                div +7 812-331-66-66;
+                                div +7 812-331-66-66;
+                                div +7 812-331-66-66;
+                            .map__email
+                                a(href="mailto:") moika@astraclinic.ru
+                            .map__time Пн-Вс: 9:00 - 21:00
+                            a.btn.map__btn(href="") Запись на прием
+        .accordion
+            .accordion__title.accordion__title--2 Клиника на станции метро Технологический институт
+            .accordion__content.map
+                .map__container
+                    .map__left
+                    .map__right
+                        .map__content
+                            .map__address.big Наб. реки Мойки, д. 51
                             .map__comment 5 мин. от м.Адмиралтейская, 7 мин. от м. Невский Проспект (выход на кан. Грибоедова)
                             .map__phones.column
                                 div +7 812-331-66-66;
@@ -30,3 +50,22 @@ block main
                             .map__email
                                 a(href="mailto:") moika@astraclinic.ru
                             .map__time Пн-Вс: 9:00 - 21:00
+                            a.btn.map__btn(href="") Запись на прием
+        .accordion
+            .accordion__title.accordion__title--3 Клиника на станции метро Адмиралтейская
+            .accordion__content.map
+                .map__container
+                    .map__left
+                    .map__right
+                        .map__content
+                            .map__address Наб. реки Мойки, д. 51
+                            .map__comment 5 мин. от м.Адмиралтейская, 7 мин. от м. Невский Проспект (выход на кан. Грибоедова)
+                            .map__phones
+                                div +7 812-331-66-66;
+                                div +7 812-331-66-66;
+                                div +7 812-331-66-66;
+                                div +7 812-331-66-66;
+                            .map__email
+                                a(href="mailto:") moika@astraclinic.ru
+                            .map__time Пн-Вс: 9:00 - 21:00
+                            a.btn.map__btn(href="") Запись на прием

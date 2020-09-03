@@ -1,0 +1,18 @@
+.doctors-page{
+    &__content{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    &__block{
+        padding: 0 16px;
+        margin-bottom: 32px;
+        width: 20%;
+        box-sizing: border-box;
+        &.hidden{
+            display: none !important;
+        }
+    }
+}

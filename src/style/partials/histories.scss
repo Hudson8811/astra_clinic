@@ -1,0 +1,11 @@
+.history-page{
+    &__content{
+        margin-top: 56px;
+    }
+
+    .history__item{
+        &+ .history__item{
+            margin-top: 32px;
+        }
+    }
+}

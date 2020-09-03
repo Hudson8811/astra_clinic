@@ -9,3 +9,6 @@
 //= partials/components.js
 //= partials/header.js
 //= partials/homepage.js
+//= partials/contacts.js
+//= partials/histories.js
+//= partials/doctors.js

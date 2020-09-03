@@ -402,3 +402,44 @@ $(document).ready(function () {
         });
     }
 });
+$(document).ready(function () {
+    if ($('.accordion__title').length > 0){
+        $('.accordion__title').on('click', function(){
+            if ($(this).hasClass('active')){
+                $('.accordion__content').slideUp('fast');
+                $('.accordion__title').removeClass('active');
+            } else {
+                $('.accordion__content').slideUp('fast');
+                $('.accordion__title').removeClass('active');
+                $(this).siblings('.accordion__content').slideDown('fast');
+                $(this).addClass('active');
+            }
+        });
+    }
+});
+$(document).ready(function () {
+    $('.history-page__filter').on('click', function(){
+        $('.history-page__filter').removeClass('active');
+        $(this).addClass('active');
+        var cat = $(this).data('cat');
+        if(cat !== 'all'){
+            $('.history__item').addClass('hidden');
+            $('.history__item[data-cat="'+cat+'"]').removeClass('hidden');
+        } else{
+            $('.history__item').removeClass('hidden');
+        }
+    });
+});
+$(document).ready(function () {
+    $('.doctors-page__filter').on('click', function(){
+        $('.doctors-page__filter').removeClass('active');
+        $(this).addClass('active');
+        var cat = $(this).data('cat');
+        if(cat !== 'all'){
+            $('.doctors-page__block').addClass('hidden');
+            $('.doctors-page__block[data-cat="'+cat+'"]').removeClass('hidden');
+        } else{
+            $('.doctors-page__block').removeClass('hidden');
+        }
+    });
+});

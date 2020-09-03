@@ -85,3 +85,137 @@ body {
 .page__pad{
 	padding: 72px 0 104px;
 }
+
+.btn{
+	display: inline-block;
+	background: #C31D1F;
+	text-decoration: none;
+	margin: 0;
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px 32px;
+	transition: 0.3s;
+	&:hover{
+		background: #13070c;
+	}
+}
+
+.breadcrumbs{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 32px;
+	&:not(:first-child){
+		margin-top: 24px;
+	}
+	&__sep{
+		width: 17px;
+		height: 8px;
+		display: block;
+		background: url("../img/bread_arrow.svg") center center no-repeat;
+		background-size: contain;
+		margin: 0 9px;
+	}
+	&__link{
+		font-size: 16px;
+		line-height: 160%;
+		color: #13070C;
+		text-decoration: none;
+		&:hover{
+			color: #c31d1f;
+		}
+		&:last-child{
+			color: #878183;
+		}
+	}
+}
+
+.tabs{
+	display: flex;
+	margin-left: -12px;
+	margin-right: -12px;
+
+	&--center{
+		justify-content: center;
+	}
+
+	&__filter{
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		color: #FFFFFF;
+		padding: 10px 50px 10px 16px;
+		margin: 0 12px;
+		border-radius: 7px;
+		transition: 0.3s;
+		opacity: 0.3;
+		position: relative;
+
+		&::before{
+			content: "";
+			display: block;
+			width: 18px;
+			height: 18px;
+			background: #ffffff;
+			border-radius: 50%;
+			position: absolute;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+
+		&::after{
+			content: "";
+			display: block;
+			width: 18px;
+			height: 18px;
+			background: #C31D1F;
+			border-radius: 50%;
+			position: absolute;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%) scale(0);
+			z-index: 1;
+			transition: 0.3s;
+		}
+
+		&:hover{
+			opacity: 1;
+		}
+		&.active{
+			opacity: 1;
+			&::after{
+				transform: translateY(-50%) scale(0.33);
+			}
+		}
+
+		&:nth-child(1){
+			background-color: #C31D1F;
+			&::after{background-color: #C31D1F;}
+		}
+		&:nth-child(2){
+			background-color: #6C2A81;
+			&::after{background-color: #6C2A81;}
+		}
+		&:nth-child(3){
+			background-color: #E01A4D;
+			&::after{background-color: #E01A4D;}
+		}
+		&:nth-child(4){
+			background-color: #1B73B2;
+			&::after{background-color: #1B73B2;}
+		}
+	}
+}
+
+.page__intro{
+	max-width: 670px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 160%;
+	color: #13070C;
+	margin-bottom: 48px;
+}
