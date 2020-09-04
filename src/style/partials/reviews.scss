@@ -1,0 +1,95 @@
+.reviews-page{
+    &__content{
+        margin-top: 40px;
+    }
+    &__add{
+        margin-top: 40px;
+        a{
+            font-weight: 500;
+            font-size: 20px;
+            text-decoration-line: underline;
+            color: #13070C;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__info{
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #878183;
+        a{
+            color: #878183;
+            text-decoration-line: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.review{
+    &__item{
+        display: flex;
+        background: #ffffff;
+        padding: 32px 45px 28px;
+
+        &+.review__item{
+            margin-top: 24px;
+        }
+    }
+    &__avatar{
+        display: block;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-right: 27px;
+    }
+    &__title{
+        color: #878183;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 150%;
+    }
+    &__name{
+        a{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            text-decoration-line: underline;
+            color: #C31D1F;
+        }
+    }
+    &__content{
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__q{
+        width: 24px;
+        display: block;
+        flex-shrink: 0;
+        margin-right: 16px;
+        margin-top: 4px;
+    }
+    &__info{
+        max-width: 744px;
+    }
+    &__text{
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #13070C;
+    }
+    &__date{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #878183;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'reviews.html'
+        };
+
+
+
+
+block main
+    .container.container--dpr.page__pad
+        h1.h2.page__title Отзывы
+
+        include partials/_breadcrumbs
+
+        .reviews-page
+            .reviews-page__filters.tabs
+                a.reviews-page__filter.tabs__filter.active(href="javascript:;" data-cat="all") Все акции
+                a.reviews-page__filter.tabs__filter(href="javascript:;" data-cat="1") Адмиралтейская
+                a.reviews-page__filter.tabs__filter(href="javascript:;" data-cat="3") Политехническая
+                a.reviews-page__filter.tabs__filter(href="javascript:;" data-cat="2") Тех. Институт
+
+            .reviews-page__content.review
+                - var n = 0;
+                while n < 6
+                    - n++
+                    .review__item(data-cat="1")
+                        img.review__avatar(src="../images/history.jpg")
+                        .review__right
+                            .review__title О враче
+                            .review__name
+                                a(href="") Авдеева Антонина
+                            .review__content
+                                img.review__q(src="img/review.svg")
+                                .review__info
+                                    .review__text
+                                        p Хочу сказать огромное спасибо Авдеевой Антонине! Очень-очень внимательный и добрый врач. С удовольствием хожу в вашу клинику из-за этого врача. У меня пропала боязнь стоматологов=)
+                                    .review__date Людмила Степанова, 23 марта 2020
+            .reviews-page__add
+                a(href="") Оставить отзыв о клинике
+            .reviews-page__info Чтобы оставить отзыв о враче, перейдите в его профиль чере страничку «<a href="">Врачи</a>»

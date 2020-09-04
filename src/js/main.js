@@ -12,3 +12,4 @@
 //= partials/contacts.js
 //= partials/histories.js
 //= partials/doctors.js
+//= partials/reviews.js
