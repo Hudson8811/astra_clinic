@@ -11,17 +11,142 @@ block vars
 
 block main
     .doctor-page.dp
-        .dp__first
-            .container.container--dpr.page__pad
+        section.dp__first
+            .container.container--dpr
                 include partials/_breadcrumbs
                 .dp__doctor
                     .dp__avatar
-                        img(src="images/doctor.jpg")
+                        div
+                            img(src="images/doctor.jpg")
                     .dp__info
-                        .dp__name Петров Олег <br>Викторович
+                        .dp__name.h2 Петров Олег <br>Викторович
                         .dp__type
                             img(src="img/logo_adm.svg")
                             span Адмиралтейская
                         .dp__desc
                             | Главный врач, директор клиники, хирург-имплантолог, кандидат медицинских наук. <br>
                             | Стаж работы в клинике 15 лет
+                        .dp__cats
+                            a(href="") Пародонтология
+                            a(href="") Имплантация зубов
+                            a(href="") Удаление зубов
+
+        section.s-pad--top.dp__exp.exp
+            .container.container--dpr
+                h2.h2  Профессиональный опыт
+                .exp__items
+                    .exp__item
+                        .exp__date 1985-1992
+                        .exp__text
+                            p Изучал челюстно-лицевую хирургию и стоматологию на одноименной кафедре Военно-Медицинской академии и практически всё последующее последипломное образование связано с обучением в этом старейшем учебном заведении.
+                    .exp__item
+                        .exp__date 1992
+                        .exp__text
+                            p Прошёл усовершенствование на факультете переподготовки и повышения квалификации по циклу «хирургическая стоматология»
+                    .exp__item
+                        .exp__date 1996-1999
+                        .exp__text
+                            p Обучался на факультете руководящего медицинского состава по специальности «челюстно-лицевая хирургия и стоматология». Кандидат медицинских наук.
+                    .exp__item
+                        .exp__date 1999-2005
+                        .exp__text
+                            p В течение шести лет являлся начальником стоматологического отделения госпиталя. За этот период неоднократно проходил усовершенствование по различным разделам стоматологии от «терапевтической стоматологии» до «имплантологии». От любви к своей специальности родились два рационализаторских предложения. В лечении пациентов предпочитаю системный подход, использую все знания для решения проблем пациента.
+                            p Знания по имплантологии и совершенствование методик имплантологического лечения в сложных клинических случаях проходил на базах известных университетов Европы: годичный цикл по имплантологии во Франкфуртском Универитете им. Гёте; цикл по костной пластике в Венском Медицинском Университете. Участвовал в международных имплантологических конгрессах в Италии, Англии, Монако. Это позволило использовать полученные знания и навыки для решения практических задач по восстановлению отсутствующих зубов пациентов.
+                    .exp__item
+                        .exp__date 2005
+                        .exp__text
+                            p Работаю в клинике Астря, управляя дружной командой врачей стараюсь направить все известные современные методики восстановления зубов для достижения эстетических и функциональных результатов.
+
+        section.s-pad--top.dp__serts.sets
+            .container.container--dpr
+                h2.h2  Сертификаты и свидетельства – 17
+                .serts__items
+                    .serts__block
+                        a.serts__item(href="images/sert.jpg" data-fancybox="serts")
+                            img.serts__img(src="images/sert.jpg")
+                            span.serts__hover
+                                span.serts__name Сертификат участника симпозиума Остеология Россия
+                                span.serts__date 2005
+                    .serts__block
+                        a.serts__item(href="images/sert.jpg" data-fancybox="serts")
+                            img.serts__img(src="images/sert.jpg")
+                            span.serts__hover
+                                span.serts__name Сертификат участника симпозиума Остеология Россия
+                                span.serts__date 2005
+                    .serts__block
+                        a.serts__item(href="images/sert.jpg" data-fancybox="serts")
+                            img.serts__img(src="images/sert.jpg")
+                            span.serts__hover
+                                span.serts__name Сертификат участника симпозиума Остеология Россия
+                                span.serts__date 2005
+                    .serts__block
+                        a.serts__item(href="images/sert.jpg" data-fancybox="serts")
+                            img.serts__img(src="images/sert.jpg")
+                            span.serts__hover
+                                span.serts__name Сертификат участника симпозиума Остеология Россия
+                                span.serts__date 2005
+                    .serts__block
+                        a.serts__item(href="images/sert.jpg" data-fancybox="serts")
+                            img.serts__img(src="images/sert.jpg")
+                            span.serts__hover
+                                span.serts__name Сертификат участника симпозиума Остеология Россия
+                                span.serts__date 2005
+                    .serts__block
+                        a.serts__item(href="images/sert.jpg" data-fancybox="serts")
+                            img.serts__img(src="images/sert.jpg")
+                            span.serts__hover
+                                span.serts__name Сертификат участника симпозиума Остеология Россия
+                                span.serts__date 2005
+                a.serts__more(href="javascript:;")
+
+
+        section.s-pad--top.dp__histories.histories
+            .container.container--dpr
+                h2.h2  Профессиональное портфолио
+                .history__container
+                    .history__slider
+                        - var n = 0;
+                        while n < 3
+                            - n++
+                            .history__item
+                                .history__left
+                                    .history__title История #1
+                                    .history__name Егорова <span>Светлана</span>
+                                    .history__cats
+                                        a(href="") Протезирование зубов
+                                        | ,
+                                        a(href="") установка виниров
+                                    .history__desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                .history__right
+                                    img.history__img(src="images/history.jpg")
+                    .hs-control
+                        .hs-control__counter
+                        .hs-control__dots
+                        .hs-control__arrows
+                            .hs-control__arrow.hs-control__left
+                                <svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3848 1.41421L16.9706 0L1.85966e-05 16.9706L16.9706 33.9411L18.3848 32.5269L2.82845 16.9706L18.3848 1.41421Z"/>
+                                </svg>
+                            .hs-control__arrow.hs-control__right
+                                <svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.556368 1.41421L1.97058 0L18.9411 16.9706L1.97058 33.9411L0.556368 32.5269L16.1127 16.9706L0.556368 1.41421Z"/>
+                                </svg>
+
+
+        section.s-pad--top.s-pad--bottom.dp__reviews.dreviews
+            .container.container--dpr
+                h2.h2  Отзывы пациентов – 14
+                .dreviews__items
+                    - var n = 0;
+                    while n < 4
+                        - n++
+                        .dreviews__item
+                            .dreviews__left
+                                .dreviews__name Владислава
+                                .dreviews__date 30 июля 2020 года
+                                img.dreviews__q(src="img/review.svg")
+                            .dreviews__right
+                                p Хочу выразит огромную благодарность за труд, отношение к больному, интеллигентность, терпение и «золотые руки» доктору Петрову Олегу Викторовичу! Являюсь сама медицинским работником, я еще раз убедилась, что отношения врач – пациент это огромное дело. Большущее Вам спасибо за все!
+                .dreviews__links
+                    a.dreviews__more(href="javascript:;") Загрузить еще <span>10</span>
+                    a.dreviews__add(href="javascript:;") Оставить отзыв о враче

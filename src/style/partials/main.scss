@@ -80,7 +80,14 @@ body {
 }
 .s-pad{
 	padding: 64px 0 72px;
+	&--top{
+		padding-top: 72px;
+	}
+	&--bottom{
+		padding-bottom: 104px;
+	}
 }
+
 
 .page__pad{
 	padding: 72px 0 104px;
