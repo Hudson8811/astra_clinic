@@ -1,50 +1,50 @@
 extends layouts/default
 
 block vars
-    -
-        const page = {
-            title: 'histories.html'
-        };
+	-
+		const page = {
+			title: 'histories.html'
+		};
 
 
 
 
 block main
-    .container.container--dpr.page__pad
-        h1.h2.page__title Наши врачи
+	.container.container--dpr.page__pad
+		h1.h2.page__title Наши врачи
 
-        include partials/_breadcrumbs
+		include partials/_breadcrumbs
 
-        .doctors-page
+		.doctors-page
 
-            .page__intro
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.page__intro
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-            .doctors-page__filters.tabs
-                a.doctors-page__filter.tabs__filter.active(href="javascript:;" data-cat="all") Все акции
-                a.doctors-page__filter.tabs__filter(href="javascript:;" data-cat="1") Адмиралтейская
-                a.doctors-page__filter.tabs__filter(href="javascript:;" data-cat="3") Политехническая
-                a.doctors-page__filter.tabs__filter(href="javascript:;" data-cat="2") Тех. Институт
+			.doctors-page__filters.tabs
+				a.doctors-page__filter.tabs__filter.active(href="javascript:;" data-cat="all") Все акции
+				a.doctors-page__filter.tabs__filter(href="javascript:;" data-cat="1") Адмиралтейская
+				a.doctors-page__filter.tabs__filter(href="javascript:;" data-cat="3") Политехническая
+				a.doctors-page__filter.tabs__filter(href="javascript:;" data-cat="2") Тех. Институт
 
-            .doctors-page__content
-                - var n = 0;
-                while n < 6
-                    - n++
-                    .doctors-page__block(data-cat="1")
-                        a.doctors__item(href="" data-cat="1")
-                            span.doctors__image.doctors__image--1
-                                img(src="images/doctor.jpg")
-                            span.doctors__name Шаманова Инесса
-                            span.doctors__role Врач-Ортодонт
-                    .doctors-page__block(data-cat="2")
-                        a.doctors__item(href="" data-cat="2")
-                            span.doctors__image.doctors__image--2
-                                img(src="images/doctor.jpg")
-                            span.doctors__name Шаманова Инесса
-                            span.doctors__role Врач-Терапевт, детский стоматолог
-                    .doctors-page__block(data-cat="3")
-                        a.doctors__item(href="" data-cat="3")
-                            span.doctors__image.doctors__image--3
-                                img(src="images/doctor.jpg")
-                            span.doctors__name Шаманова Инесса
-                            span.doctors__role Врач-Ортодонт
+			.doctors-page__content
+				- var n = 0;
+				while n < 6
+					- n++
+					.doctors-page__block(data-cat="1")
+						a.doctors__item(href="" data-cat="1")
+							span.doctors__image.doctors__image--1
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Ортодонт
+					.doctors-page__block(data-cat="2")
+						a.doctors__item(href="" data-cat="2")
+							span.doctors__image.doctors__image--2
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Терапевт, детский стоматолог
+					.doctors-page__block(data-cat="3")
+						a.doctors__item(href="" data-cat="3")
+							span.doctors__image.doctors__image--3
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Ортодонт

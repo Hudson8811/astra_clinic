@@ -1,146 +1,326 @@
 extends layouts/default
 
 block vars
-    -
-        const page = {
-            title: 'histories.html'
-        };
+	-
+		const page = {
+			title: 'histories.html'
+		};
 
 
 
 
 block main
-    .container.container--mini.page__pad
-        h1.h2.page__title Имплантация зубов
+	.container.container--mini.page__pad
+		h1.h2.page__title Имплантация зубов
 
-        include partials/_breadcrumbs
+		include partials/_breadcrumbs
 
-        .usluga-page
-            secion.usluga-page__intro
-                p Имплантация зубов — восстановление утерянного зуба с помощью зубного протеза.
-                .usluga-page__main-img
-                    img(src="images/implant/1.jpg")
+		.usluga-page
+			secion.usluga-page__intro
+				p Имплантация зубов — восстановление утерянного зуба с помощью зубного протеза.
+				.usluga-page__main-img
+					img(src="images/implant/1.jpg")
 
-            section.s-pad.usluga-page__why
-                h2.h2  Показания к имплантации зубов
-                .up-w__table
-                    .up-w__row
-                        .up-w__cell.up-w__img
-                            img(src="images/implant/p1.png")
-                        .up-w__cell.up__text-style
-                            p <strong>Отсутствие одного зуба в ряду при здоровых соседних зубах.</strong> В данном случае установка импланта позволяет сохранить соседние зубы здоровыми, не обтачивая их под какие-либо стоматологические конструкции.
-                    .up-w__row
-                        .up-w__cell.up-w__img
-                            img(src="images/implant/p2.png")
-                        .up-w__cell.up__text-style
-                            p <strong>Ситуации, когда у человека отсутствует подряд сразу два-три зуба.</strong> С помощью имплантации их можно восстановить без препарирования ограничивающих дефект здоровых зубов.
-                    .up-w__row
-                        .up-w__cell.up-w__img
-                            img(src="images/implant/p3.png")
-                        .up-w__cell.up__text-style
-                            p <strong>Отсутствие последних зубов в ряду.</strong> Использование традиционных видов протезирования в данном случае всегда вызывает определенные сложности, в то время как имплантация зубов проводится успешно при наличие или отсутствие зубов в окружении дефекта.
-                    .up-w__row
-                        .up-w__cell.up-w__img
-                            img(src="images/implant/p4.png")
-                        .up-w__cell.up__text-style
-                            p <strong>Полное отсутствие зубов.</strong> В этой ситуации может применяться как традиционное съемное протезирование, так и имплантация. Однако, для людей, психологически не готовых к ношению съемных протезов, лучшим вариантом будет именно имплантация.
-                    .up-w__row
-                        .up-w__cell.up-w__img
-                            img(src="images/implant/p5.png")
-                        .up-w__cell.up__text-style
-                            p <strong>Непереносимость съемных протезов.</strong> У некоторых пациентов при ношении съемного протеза может наблюдаться повышенная чувствительность к акрилатам (основному компоненту съемных протезов) или выраженный рвотный рефлекс. Для них единственной альтернативой традиционному протезированию становится процедура – имплантация зубов.
+			section.s-pad.usluga-page__why
+				h2.h2  Показания к имплантации зубов
+				.up-w__table
+					.up-w__row
+						.up-w__cell.up-w__img
+							img(src="images/implant/p1.png")
+						.up-w__cell.up__text-style
+							p <strong>Отсутствие одного зуба в ряду при здоровых соседних зубах.</strong> В данном случае установка импланта позволяет сохранить соседние зубы здоровыми, не обтачивая их под какие-либо стоматологические конструкции.
+					.up-w__row
+						.up-w__cell.up-w__img
+							img(src="images/implant/p2.png")
+						.up-w__cell.up__text-style
+							p <strong>Ситуации, когда у человека отсутствует подряд сразу два-три зуба.</strong> С помощью имплантации их можно восстановить без препарирования ограничивающих дефект здоровых зубов.
+					.up-w__row
+						.up-w__cell.up-w__img
+							img(src="images/implant/p3.png")
+						.up-w__cell.up__text-style
+							p <strong>Отсутствие последних зубов в ряду.</strong> Использование традиционных видов протезирования в данном случае всегда вызывает определенные сложности, в то время как имплантация зубов проводится успешно при наличие или отсутствие зубов в окружении дефекта.
+					.up-w__row
+						.up-w__cell.up-w__img
+							img(src="images/implant/p4.png")
+						.up-w__cell.up__text-style
+							p <strong>Полное отсутствие зубов.</strong> В этой ситуации может применяться как традиционное съемное протезирование, так и имплантация. Однако, для людей, психологически не готовых к ношению съемных протезов, лучшим вариантом будет именно имплантация.
+					.up-w__row
+						.up-w__cell.up-w__img
+							img(src="images/implant/p5.png")
+						.up-w__cell.up__text-style
+							p <strong>Непереносимость съемных протезов.</strong> У некоторых пациентов при ношении съемного протеза может наблюдаться повышенная чувствительность к акрилатам (основному компоненту съемных протезов) или выраженный рвотный рефлекс. Для них единственной альтернативой традиционному протезированию становится процедура – имплантация зубов.
 
-            section.usluga-page__what
-                .up-wh__flex
-                    .up-wh__img
-                        img(src="images/implant/2.jpg")
-                    .up-wh__right
-                        .up-wh__title Что из себя представляет зубной имплант?
-                        .up-wh__text.up__text-style
-                            p <strong>Имплант</strong> — искусственная опора, является аналогом живых корней зуба. Сделан из биосовместимого с тканями организма титанового винта, вживляемого в кость верхней или нижней челюсти, на который впоследствии фиксируется коронка, полноценно замещая утраченный зуб.
-                            p <strong>Абатмент</strong> — изготавливается из титана и формирует связующее звено между имплантом и сверхлежащим мостовидным протезом.
-                            p <strong>Коронка</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+			section.usluga-page__what
+				.up-wh__flex
+					.up-wh__img
+						img(src="images/implant/2.jpg")
+					.up-wh__right
+						.up-wh__title Что из себя представляет зубной имплант?
+						.up-wh__text.up__text-style
+							p <strong>Имплант</strong> — искусственная опора, является аналогом живых корней зуба. Сделан из биосовместимого с тканями организма титанового винта, вживляемого в кость верхней или нижней челюсти, на который впоследствии фиксируется коронка, полноценно замещая утраченный зуб.
+							p <strong>Абатмент</strong> — изготавливается из титана и формирует связующее звено между имплантом и сверхлежащим мостовидным протезом.
+							p <strong>Коронка</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 
 
-            section.s-pad.usluga-page__price
-                h2.h2  Стоимость имплантации 1 зуба <br>в сети клиник «Астра»
+			section.s-pad.usluga-page__price
+				h2.h2  Стоимость имплантации 1 зуба <br>в сети клиник «Астра»
 
-                .up-p__flex
-                    .up-p__block
-                        .up-p__item
-                            img.up-p__logo(src="img/logo_adm.svg")
-                        .up-p__title
-                            p
-                            p
-                        .up-p__gray
-                        .up-p__price
-                        .up-p__btn.btn.btn--1
+				.up-p__flex.up-p__flex--usluga-spaces
+					.up-p__block
+						.up-p__item
+							img.up-p__logo(src="img/logo_adm.svg")
+						.up-p__title
+							p Адмиралтейская
+							p +7 812-331-66-66
+						.up-p__gray Работа+ материалы
+						.up-p__price от 41 500 руб.
+						a.up-p__btn(href="") Запись на прием
+					.up-p__block
+						.up-p__item
+							img.up-p__logo(src="img/logo_tech.svg")
+						.up-p__title
+							p Технологический институт
+							p +7 812-331-66-66
+						.up-p__gray Работа+ материалы
+						.up-p__price от 41 500 руб.
+						a.up-p__btn(href="") Запись на прием
+					.up-p__block
+						.up-p__item
+							img.up-p__logo(src="img/logo_poly.svg")
+						.up-p__title
+							p Политехническая
+							p +7 812-331-66-66
+						.up-p__gray Работа+ материалы
+						.up-p__price от 41 500 руб.
+						a.up-p__btn(href="") Запись на прием
 
-                .up-p__prices
-                    .accordion
-                        .accordion__title.accordion__title--1 Цены на имплантацию м. Адмиралтейская
-                        .accordion__content.prices
-                            .sub-accordion
-                                - var n = 0;
-                                while n < 6
-                                    - n++
-                                    .sub-accordion__title.prices__title Общие услуги
-                                    .sub-accordion__content.prices__content
-                                        .prices__table
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                    .accordion
-                        .accordion__title.accordion__title--2 Цены на имплантацию м. Технологический институт
-                        .accordion__content.prices
-                            .sub-accordion
-                                - var n = 0;
-                                while n < 6
-                                    - n++
-                                    .sub-accordion__title.prices__title Общие услуги
-                                    .sub-accordion__content.prices__content
-                                        .prices__table
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
+				.up-p__prices
+					.accordion
+						.accordion__title.accordion__title--1 Цены на имплантацию м. Адмиралтейская
+						.accordion__content.prices
+							.sub-accordion
+								- var n = 0;
+								while n < 6
+									- n++
+									.sub-accordion__title.prices__title Общие услуги
+									.sub-accordion__content.prices__content
+										.prices__table
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+					.accordion
+						.accordion__title.accordion__title--2 Цены на имплантацию м. Технологический институт
+						.accordion__content.prices
+							.sub-accordion
+								- var n = 0;
+								while n < 6
+									- n++
+									.sub-accordion__title.prices__title Общие услуги
+									.sub-accordion__content.prices__content
+										.prices__table
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
 
-                    .accordion
-                        .accordion__title.accordion__title--3 Цены на имплантацию м. Политехническая
-                        .accordion__content.prices
-                            .sub-accordion
-                                - var n = 0;
-                                while n < 6
-                                    - n++
-                                    .sub-accordion__title.prices__title Общие услуги
-                                    .sub-accordion__content.prices__content
-                                        .prices__table
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
-                                            .prices__row
-                                                .prices__cell 1
-                                                .prices__cell Расширенная консультация имплантолога
-                                                .prices__cell 1000 руб.
+					.accordion
+						.accordion__title.accordion__title--3 Цены на имплантацию м. Политехническая
+						.accordion__content.prices
+							.sub-accordion
+								- var n = 0;
+								while n < 6
+									- n++
+									.sub-accordion__title.prices__title Общие услуги
+									.sub-accordion__content.prices__content
+										.prices__table
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+											.prices__row
+												.prices__cell 1
+												.prices__cell Расширенная консультация имплантолога
+												.prices__cell 1000 руб.
+
+
+
+			section.usluga-page__doctors
+				h2.h2 Врачи-имплантологи клиники «Астра»
+				.usp-doc-sub-t Все имплантологи наших клиник — челюстно-лицевые хирурги, обладающие более широкими знаниями и навыками, чем хирург-стоматолог.
+				.usp-doc-sub-text
+					p Каждый специалист обладает огромным и уникальным опытом в области имплантации зубов и установил не менее 10 000 имплантов каждый. Вы можете записаться на консультацию в любой удобный филиал нашей сети.
+				.doctors-page__content
+					.doctors-page__block(data-cat="1")
+						a.doctors__item(href="" data-cat="1")
+							span.doctors__image.doctors__image--1
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Ортодонт
+					.doctors-page__block(data-cat="2")
+						a.doctors__item(href="" data-cat="2")
+							span.doctors__image.doctors__image--2
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Терапевт, детский стоматолог
+
+
+				.mt20.review.js-more-reviews
+					.review__item(data-cat="1")
+						img.review__avatar(src="../images/history.jpg")
+						.review__right
+							.review__title О враче
+							.review__name
+								a(href="") Авдеева Антонина
+							.review__content
+								img.review__q(src="img/review.svg")
+								.review__info
+									.review__text
+										p Хочу сказать огромное спасибо Авдеевой Антонине! Очень-очень внимательный и добрый врач. С удовольствием хожу в вашу клинику из-за этого врача. У меня пропала боязнь стоматологов=)
+									.review__date Людмила Степанова, 23 марта 2020
+
+					.review__item(data-cat="3")
+						img.review__avatar(src="../images/history.jpg")
+						.review__right
+							.review__title О враче
+							.review__name
+								a(href="") Авдеева Антонина
+							.review__content
+								img.review__q(src="img/review.svg")
+								.review__info
+									.review__text
+										p Хочу сказать огромное спасибо Авдеевой Антонине! Очень-очень внимательный и добрый врач. С удовольствием хожу в вашу клинику из-за этого врача. У меня пропала боязнь стоматологов=)
+									.review__date Людмила Степанова, 23 марта 2020
+
+					.review__item(data-cat="2")
+						img.review__avatar(src="../images/history.jpg")
+						.review__right
+							.review__title О враче
+							.review__name
+								a(href="") Авдеева Антонина
+							.review__content
+								img.review__q(src="img/review.svg")
+								.review__info
+									.review__text
+										p Хочу сказать огромное спасибо Авдеевой Антонине! Очень-очень внимательный и добрый врач. С удовольствием хожу в вашу клинику из-за этого врача. У меня пропала боязнь стоматологов=)
+									.review__date Людмила Степанова, 23 марта 2020
+					- var n = 0;
+					while n < 6
+						- n++
+						.review__item.review__item--hidden(data-cat="1")
+							img.review__avatar(src="../images/history.jpg")
+							.review__right
+								.review__title О враче
+								.review__name
+									a(href="") Авдеева Антонина
+								.review__content
+									img.review__q(src="img/review.svg")
+									.review__info
+										.review__text
+											p Хочу сказать огромное спасибо Авдеевой Антонине! Очень-очень внимательный и добрый врач. С удовольствием хожу в вашу клинику из-за этого врача. У меня пропала боязнь стоматологов=)
+										.review__date Людмила Степанова, 23 марта 2020
+
+				.dreviews__links
+					a.dreviews__more.js-load-more-reviews(href="javascript:;") Загрузить еще
+						span  12
+
+			section.section-quality-sert
+
+				.quality-sert
+					.quality-sert__pic
+						img(src="img/gerb.png", alt="")
+					.quality-sert__text В клинике «Астра» используются качественные импланты из титана от ведущих мировых производителей. Все материалы прошли обязательную сертификацию и разрешены к использованию на территории России
+
+
+			section.s-pad--top.dp__histories.histories
+				h2.h2  Работы наших врачей
+				.history__container
+					.history__slider
+						- var n = 0;
+						while n < 3
+							- n++
+							.history__item
+								.history__left
+									.history__title История #1
+									.history__name Егорова <span>Светлана</span>
+									.history__cats
+										a(href="") Протезирование зубов
+										| ,
+										a(href="") установка виниров
+									.history__desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+								.history__right
+									img.history__img(src="images/history.jpg")
+					.hs-control
+						.hs-control__counter
+						.hs-control__dots
+						.hs-control__arrows
+							.hs-control__arrow.hs-control__left
+								<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.3848 1.41421L16.9706 0L1.85966e-05 16.9706L16.9706 33.9411L18.3848 32.5269L2.82845 16.9706L18.3848 1.41421Z"/>
+								</svg>
+							.hs-control__arrow.hs-control__right
+								<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.556368 1.41421L1.97058 0L18.9411 16.9706L1.97058 33.9411L0.556368 32.5269L16.1127 16.9706L0.556368 1.41421Z"/>
+								</svg>
+
+			section.s-pad.section-usl-advantages
+				h2.h2 Преимущества имплантации у нас
+				.usl-advantages
+					.usl-advantage Все имплантологи сети — челюстно-лицевые хирурги, обладающие более широкими знаниями и навыками, чем хирург-стоматолог.
+					.usl-advantage Каждый специалист обладает огромным и уникальным опытом. А так же, авторскими методиками пластики твердых и мягких тканей
+					.usl-advantage Клиники обладают самыми широкими инструментальными возможностями при проведении диагностики и хирургического протокола.
+					.usl-advantage Все имплантологи работают в клиниках от 7 до 15 лет и имеют множество хороших отзывов от пациентов.
+					.usl-advantage Количество установленных имплантов у каждого врача-имплантолога в нашей клинике составляет более 10 000 шт.
+					.usl-advantage Цены в наших клиниках не высокие, но уровень оказанной услуги соответствует мировым стандартам.
+
+
+			section.s-pad--top.dp__histories.histories
+				h2.h2  Этапы лечения
+				.history__container
+					.history__slider
+						- var n = 0;
+						while n < 3
+							- n++
+							.history__item
+								.history__left
+									.history__title История #1
+									.history__name Егорова <span>Светлана</span>
+									.history__cats
+										a(href="") Протезирование зубов
+										| ,
+										a(href="") установка виниров
+									.history__desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+								.history__right
+									img.history__img(src="images/history.jpg")
+					.hs-control
+						.hs-control__counter
+						.hs-control__dots
+						.hs-control__arrows
+							.hs-control__arrow.hs-control__left
+								<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.3848 1.41421L16.9706 0L1.85966e-05 16.9706L16.9706 33.9411L18.3848 32.5269L2.82845 16.9706L18.3848 1.41421Z"/>
+								</svg>
+							.hs-control__arrow.hs-control__right
+								<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.556368 1.41421L1.97058 0L18.9411 16.9706L1.97058 33.9411L0.556368 32.5269L16.1127 16.9706L0.556368 1.41421Z"/>
+								</svg>

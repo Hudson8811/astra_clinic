@@ -114,14 +114,14 @@ gulp.task('style:build', function () {
 
 gulp.task('images:build', function () {
 	return gulp.src(path.src.images)
-		.pipe(imagemin({
+		/*.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{
 				removeViewBox: false
 			}],
 			use: [pngquant()],
 			interlaced: true
-		}))
+		}))*/
 		.pipe(gulp.dest(path.build.images))
 		.pipe(reload({
 			stream: true
@@ -129,14 +129,14 @@ gulp.task('images:build', function () {
 });
 gulp.task('img:build', function () {
 	return gulp.src(path.src.img)
-		.pipe(imagemin({
+		/*.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{
 				removeViewBox: false
 			}],
 			use: [pngquant()],
 			interlaced: true
-		}))
+		}))*/
 		.pipe(gulp.dest(path.build.img))
 		.pipe(reload({
 			stream: true
