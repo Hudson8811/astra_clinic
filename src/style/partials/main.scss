@@ -37,6 +37,10 @@ body {
 
 .main {
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 
 	@include _min1501 {
 		margin-left: 359px;
@@ -53,6 +57,14 @@ body {
 	&--dpr {
 		@media (min-width:1700px) {
 			padding-right: 125px !important;
+			width: 1263px !important;
+		}
+	}
+
+	&--mini {
+		width: 1021px;
+		@media (min-width:1700px) {
+			padding-right: 242px !important;
 			width: 1263px !important;
 		}
 	}

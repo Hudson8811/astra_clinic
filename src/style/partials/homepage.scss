@@ -530,7 +530,9 @@
 		padding: 48px;
 		box-sizing: border-box;
 	}
-	&__right{}
+	&__right{
+		flex-grow: 1;
+	}
 	&__title{
 		font-size: 16px;
 		line-height: 160%;

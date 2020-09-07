@@ -13,3 +13,4 @@
 //= partials/histories.js
 //= partials/doctors.js
 //= partials/reviews.js
+//= partials/prices.js

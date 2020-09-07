@@ -1,0 +1,90 @@
+.usluga-page{
+    &__intro{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 160%;
+        color: #13070C;
+    }
+    &__main-img{
+        margin-top: 28px;
+        img{
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+
+
+.up{
+    &__text-style{
+        font-size: 16px;
+        line-height: 150%;
+        color: #13070C;
+        > * + *{
+            margin-top: 12px;
+        }
+    }
+
+    &-w {
+        &__table {
+            display: table;
+            width: 100%;
+            margin-top: 8px;
+            max-width: 975px
+        }
+
+        &__row {
+            display: table-row;
+        }
+
+        &__cell {
+            display: table-cell;
+            vertical-align: top;
+            padding-top: 40px;
+
+
+            & + .up-w__cell {
+                padding-left: 52px;
+            }
+        }
+
+        &__img {
+            img {
+                max-width: 200px;
+                display: block;
+            }
+        }
+    }
+
+    &-wh{
+        &__flex{
+            padding: 24px 40px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+        &__img{
+            margin-right: 52px;
+            width: 260px;
+            flex-shrink: 0;
+            img{
+                display: block;
+                max-width: 100%;
+            }
+        }
+        &__title{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 150%;
+            color: #13070C;
+            margin-bottom: 32px;
+        }
+        &__text{
+            max-width: 570px;
+        }
+    }
+
+    &-p{
+
+    }
+}
