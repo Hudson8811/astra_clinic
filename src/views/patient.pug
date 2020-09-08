@@ -1,0 +1,65 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'histories.html'
+		};
+
+
+
+
+block main
+	.patient-page
+		section.dp__first.bg-lg
+			.container.container--mini
+				h1.h2 Пациент: Светлана Егорова
+				include partials/_breadcrumbs
+
+				.patient-photos
+					a.patient-photo(href="images/history.jpg" data-fancybox="patient-photo")
+						img(src="images/history.jpg", alt="")
+					a.patient-photo(href="images/history.jpg" data-fancybox="patient-photo")
+						img(src="images/history.jpg", alt="")
+					a.patient-photo(href="images/history.jpg" data-fancybox="patient-photo")
+						img(src="images/history.jpg", alt="")
+
+
+				h2.patitent-desc-title Описание случая
+
+				.patitent-desc.serv-text-type
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+					p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+
+				h2.patitent-desc-title Отзыв пациента
+
+				.reviews.reviews--pat-page
+					.review__item(data-cat="1")
+						img.review__avatar(src="../images/history.jpg")
+						.review__right
+							.review__title О враче
+							.review__name
+								a(href="") Астра
+							.review__content
+								img.review__q(src="img/review.svg")
+								.review__info
+									.review__text
+										p Дмитрий Владимирович помог мне дважды. Первый раз удалил легко и незаметно для меня зуб мудрости сверху (он рос в щеку). Затем мы убирали зуб мудрости внизу. Зуб очень сложный, крупный, и только немного показавшийся из десны. Работы у врача было много. Но процесс и результат на все 100%. Дальнейшие рекомендации и предостережения также помогли быстрому восстановлению. Доктор, спасибо большое! Вы - мой хирург навсегда!
+									.review__date Людмила Степанова, 23 марта 2020
+
+
+				h2.patitent-desc-title Команда врачей
+
+				.doctors-page__content
+					.doctors-page__block(data-cat="1")
+						a.doctors__item(href="" data-cat="1")
+							span.doctors__image.doctors__image--1
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Ортодонт
+					.doctors-page__block(data-cat="2")
+						a.doctors__item(href="" data-cat="2")
+							span.doctors__image.doctors__image--2
+								img(src="images/doctor.jpg")
+							span.doctors__name Шаманова Инесса
+							span.doctors__role Врач-Терапевт, детский стоматолог

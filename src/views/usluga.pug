@@ -294,25 +294,26 @@ block main
 					.usl-advantage Цены в наших клиниках не высокие, но уровень оказанной услуги соответствует мировым стандартам.
 
 
-			section.s-pad--top.dp__histories.histories
+			section.dp__histories.histories.histories--usl
 				h2.h2  Этапы лечения
 				.history__container
-					.history__slider
+					.history__slider.history__slider--reverse-pos
 						- var n = 0;
 						while n < 3
 							- n++
 							.history__item
 								.history__left
-									.history__title История #1
-									.history__name Егорова <span>Светлана</span>
 									.history__cats
-										a(href="") Протезирование зубов
-										| ,
-										a(href="") установка виниров
-									.history__desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-								.history__right
-									img.history__img(src="images/history.jpg")
-					.hs-control
+										a(href="") Имплантация является амбулаторной процедурой и не требует госпитализации. Анестезия индивидуально подбирается в клинике, что позволяет полностью избежать боли. Место укола дополнительно обезболивается анестезирующим гелем. При необходимости в сложных клинических случаях может применяться медикаментозный сон. Наши импланты из титана не вызывают аллергии или отторжения, быстро приживаются и не доставляют неудобств.
+								.history__right.history__right--stages
+									.history-right__stage Этап 6
+									.history-right__title Установка
+										br
+										|  импланта ч.1
+									.history-right__info Длительность
+										br
+										|  процедуры: 30-60мин
+					.hs-control.hs-control--reverse-pos
 						.hs-control__counter
 						.hs-control__dots
 						.hs-control__arrows
@@ -324,3 +325,65 @@ block main
 								<svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0.556368 1.41421L1.97058 0L18.9411 16.9706L1.97058 33.9411L0.556368 32.5269L16.1127 16.9706L0.556368 1.41421Z"/>
 								</svg>
+
+
+			section.section-useful-information
+				h2.h2 Полезная информация
+				.useful-information
+					a.use-inf-video(href="images/videotest.mp4" data-fancybox="useful-information")
+						img.use-inf-video__pic(src="images/usinf.jpg", alt="")
+					a.use-inf-video(href="images/videotest.mp4" data-fancybox="useful-information")
+						img.use-inf-video__pic(src="images/usinf.jpg", alt="")
+
+
+
+
+			section.s-pad.usluga-page__price
+				.up-p__prices
+					.accordion
+						.accordion__title.accordion__title--serv Виды имплантов и материалы
+						.accordion__content.accordion__content--serv.serv-text-type
+							h3 Зубные импланты корневидной формы
+							img(src="images/implant.jpg", alt="")
+							p Это наиболее распространенный вид зубных имплантов, который применяется в большинстве случаев. Форма и структура таких имплантов может отличаться друг от друга. Чаще всего внутрикостная часть зубного импланта имеет цилиндрическую или винтовую форму.
+							p Корневая часть винтовых имплантов, как не трудно догадаться, изготавливается в форме винта с резьбой. В своей апикальной части они имеют специальные антиротационные замки, гарантирующие надежное крепление импланта и последующую фиксацию зубного протеза на импланте.
+							p Все современные зубные импланты корневидной формы обладают уникальным биоактивным покрытием для лучшего приживления импланта.
+							p Зубные импланты корневидной формы широко используются в имплантологии благодаря их уникальным преимуществам:
+
+							ul
+								li высокая долговечность и надежность;
+								li отсутствие травматичности для пациента при установке зубного импланта;
+								li полная имитация корня зуба;
+								li быстрое приживление;
+								li особое покрытие для надежной фиксации.
+
+					.accordion
+						.accordion__title.accordion__title--serv Виды имплантов и материалы
+						.accordion__content.accordion__content--serv.serv-text-type
+							h3 Зубные импланты корневидной формы
+					.accordion
+						.accordion__title.accordion__title--serv Производители имплантов
+						.accordion__content.accordion__content--serv.serv-text-type
+							h3 Зубные импланты корневидной формы
+					.accordion
+						.accordion__title.accordion__title--serv Противопоказания к имплантации
+						.accordion__content.accordion__content--serv.serv-text-type
+							h3 Зубные импланты корневидной формы
+					.accordion
+						.accordion__title.accordion__title--serv Часто-задаваемые вопросы (F.A.Q.)
+						.accordion__content.accordion__content--serv.serv-text-type
+							h3 Зубные импланты корневидной формы
+
+
+			section.sec-more-articles
+				h2.h2 Вспомогательные статьи
+				.more-articles
+					a.more-articles-item(href="") Какие коронки лучше для зубов: металлокерамика, керамика или оксид циркония
+					a.more-articles-item(href="") Как лучше восстановить зуб: коронкой, имплантом, мостом или бюгельным протезом?
+					a.more-articles-item(href="") Съемные бюгельные протезы на кламмерах на верхнюю и нижнюю челюсть: плюсы и минусы, цена
+					a.more-articles-item(href="") Безметалловые коронки из диоксида циркония на зубы: плюсы и минусы
+					a.more-articles-item(href="") Несъемное протезирование зубов All-on-4 на имплантах (все на четырех)
+					a.more-articles-item(href="") Почему не приживается имплант зуба: основные причины
+					a.more-articles-item(href="") Пломба на зуб с помощью штифта, реставрация зуба на штифте
+
+				a.more-articles__link-all(href="")  Больше статей
