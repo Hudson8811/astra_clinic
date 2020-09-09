@@ -18,6 +18,18 @@
 	}
 }
 
+@media screen and(max-width: 1020px) {
+	.tours__container {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.tours__block {
+		padding: 0 15px;
+	}
+}
+
+
 @media screen and(max-width: 950px) {
 	.specials__container {
 		display: block;
@@ -30,21 +42,41 @@
 	.specials__right {
 		width: 100%;
 	}
-	.specials__slide{
+
+	.specials__slide {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: unset;
-		img{
+
+		img {
 			width: 100%;
 			height: auto;
 		}
+	}
+
+	.up-p__block {
+
+		padding: 20px 10px;
+		width: calc(50% - 30px);
+	}
+
+	.up-p__price {
+		font-size: 22px;
 	}
 }
 
 @media screen and(max-width: 900px) {
 	.s-pad {
 		padding: 40px 0 40px;
+	}
+
+	.s-pad--top {
+		padding-top: 40px;
+	}
+
+	.s-pad--bottom {
+		padding-bottom: 40px;
 	}
 
 	.container {
@@ -95,17 +127,61 @@
 	.pad-digits-item__desc {
 		width: 100%;
 	}
+
+	.benefits__flex {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.benefits__item {
+		width: 33.3333%;
+		flex: 0 0 33.3333%;
+		padding: 0 15px;
+		margin-top: 30px;
+	}
+
+	.footer__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.footer {
+		padding-bottom: 15px;
+	}
+
+	.footer__left,
+	.footer__dev {
+		margin-bottom: 15px;
+		flex-grow: 1;
+	}
+
+	.doctors-page__block {
+		width: 25%;
+		flex: 0 0 25%;
+	}
+
 }
 
 @media screen and(max-width: 800px) {
 	.history__item {
-		display: flex;
-		flex-direction: column;
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.history-right__title,
+	.history-right__info {
+		br {
+			display: none;
+		}
 	}
 
 	.history__right {
 		order: -1;
 		min-width: unset;
+		width: 100%;
+	}
+
+	.history__right--stages {
 		width: 100%;
 	}
 
@@ -119,20 +195,312 @@
 		max-width: calc(100% - 97px);
 	}
 
+	.hs-control--reverse-pos {
+		left: 48px;
+	}
+
 	.history__slider .history__left {
 		padding-bottom: 90px;
 	}
-	.doctors__filters{
+
+	.tabs {
 		flex-wrap: wrap;
 	}
-	.tabs{
+
+	.tabs {
 		justify-content: flex-start;
 	}
+
+	.tours__container {
+		flex-wrap: wrap;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.tours__block {
+		width: 50%;
+		flex: 0 0 50%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 10px 20px;
+	}
+
+	.map__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.map__left {
+		width: 100%;
+		height: 350px;
+	}
+
+	.map__right {
+		width: 100%;
+		order: -1;
+	}
+
+	.accordion__content.map .map__left {
+		width: 100%;
+	}
+
+	.up-wh__flex {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.up-wh__img {
+		width: 150px;
+		min-width: 150px;
+		margin-right: 25px;
+	}
+
+	.up-wh__title {
+		margin-bottom: 12px;
+	}
+
+
+	.usl-advantage {
+		padding-left: 30px;
+		font-size: 14px;
+	}
+
+	.usl-advantage::before {
+		width: 20px;
+		min-width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and(max-width: 700px) {
+	.dp .dp__desc {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	.dp__type {
+		margin-top: 12px;
+	}
+
+	.dp .dp__cats {
+		margin-top: 12px;
+	}
+
+	.dp__avatar {
+		margin-right: 20px;
+	}
+
+	.doctors-page__block {
+		width: 33.333%;
+		flex: 0 0 33.333%;
+	}
+
+	.review__item {
+		padding: 15px;
+	}
+
+	.review__item {
+		display: block;
+	}
+
+	.review__right {}
+
+	.review__q {
+		display: none;
+	}
+
+	.review__avatar {
+		margin-right: 0;
+		margin-bottom: 10px;
+		position: absolute;
+	}
+
+	.review__title,
+	.review__name {
+		display: block;
+		padding-left: 100px;
+	}
+
+	.review__name {
+		padding-bottom: 37px;
+	}
+
+	.up-p__btn {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.use-inf-video::after {
+		width: 50px;
+		height: 100%;
+	}
+
+	.useful-information {
+		margin: 30px -10px -20px;
+	}
+
+	.use-inf-video {
+		margin: 0 10px 20px;
+		max-width: calc(50% - 20px);
+	}
+
+	.quality-sert {
+		padding: 15px;
+	}
+
+	.quality-sert__text {
+		margin-left: 20px;
+		padding-left: 20px;
+		font-size: 15px;
+	}
+
+	.accordion__content--serv {
+		padding: 15px;
+	}
+}
+
+
+@media screen and(max-width: 650px) {
+	.review__text {
+		font-size: 14px;
+	}
+
+	.benefits__item {
+		width: 50%;
+		flex: 0 0 50%;
+	}
+
+	.serts-page__item {
+		width: 25%;
+		flex: 0 0 25%;
+		padding: 0 10px;
+		margin-top: 20px;
+	}
+
+	.serts-page__items {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.page__intro {
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+
+	.serts-page__block:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	.serts-page__content {
+		margin-top: 25px;
+	}
+
+	.page__pad {
+		padding: 35px 0 50px;
+	}
+
+	.exp__item {
+		display: block;
+	}
+
+	.exp__date {
+		display: block;
+		text-align: left;
+		padding-top: 15px;
+	}
+
+	.exp__text {
+		display: block;
+		padding-left: 0;
+		padding-top: 10px;
+		font-size: 15px;
+	}
+
+	.dreviews__item {
+		display: block;
+		padding: 0;
+	}
+
+	.up-w__cell+.up-w__cell {
+		padding-left: 20px;
+	}
+
+	.up-w__cell {
+		padding-top: 30px;
+	}
+}
+
+@media screen and(max-width: 550px) {
+	.sub-accordion__title {
+		padding-left: 10px;
+	}
+
+	.accordion__content.prices {}
+
+	.prices__content {
+		padding-left: 10px;
+	}
+
+	.prices__table {
+		display: block;
+	}
+
+	.prices__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.prices__cell {
+		display: flex;
+		flex-wrap: wrap;
+		min-width: 40px;
+		box-sizing: border-box;
+
+		&:first-child {
+			width: unset;
+		}
+
+		&:nth-child(2) {
+			flex-grow: 1;
+			max-width: calc(100% - 40px);
+
+		}
+
+		&:nth-child(3) {
+			width: 100%;
+			padding-left: 45px;
+			display: flex;
+			text-align: left;
+			justify-content: flex-start;
+			font-weight: 500;
+
+		}
+	}
+
+	.usluga-page__intro {
+		font-size: 16px;
+	}
+
+	.up-wh__img {
+		display: none;
+	}
+
+
 }
 
 @media screen and(max-width: 515px) {
 	.s-pad {
 		padding: 30px 0 30px;
+	}
+
+	.s-pad--top {
+		padding-top: 30px;
+	}
+
+	.s-pad--bottom {
+		padding-bottom: 30px;
 	}
 
 	.pad-posts-item__pic {
@@ -153,6 +521,14 @@
 		padding: 15px;
 	}
 
+	.history__right--stages {
+		padding: 15px;
+	}
+
+	.history__slider--reverse-pos .history__left {
+		padding-top: 15px;
+	}
+
 	.hs-control {
 		left: 10px;
 		max-width: calc(100% - 30px);
@@ -166,8 +542,253 @@
 		margin-top: 5px;
 	}
 
-	.specials__left{
+	.specials__left {
 		padding: 15px;
+	}
+
+	.s-pad.specials {
+		.container {
+			max-width: 100%;
+		}
+	}
+
+	.hs-control__dots {
+		margin: 0 20px;
+	}
+
+	.tours__block {
+		width: 100%;
+		flex: 0 0 100%;
+		padding: 0 10px 15px;
+	}
+
+	.footer__left {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	.footer__politic,
+	.footer__copy {
+		margin-bottom: 10px;
+		flex-grow: 1;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.footer__dev {
+		justify-content: center;
+	}
+
+	.dp__doctor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.dp__avatar {
+		max-width: 70%;
+		width: 320px;
+		margin-right: 0;
+
+	}
+
+	.dp__name {
+		display: block;
+		text-align: center;
+	}
+
+	.exp__date {
+		font-size: 25px;
+	}
+
+	.exp__date {
+		padding-top: 10px;
+	}
+
+	.dreviews__links {
+		display: block;
+
+		a {
+			display: block;
+		}
+	}
+
+	.doctors-page__content {
+		padding-left: -10px;
+		padding-right: -10px;
+	}
+
+	.doctors-page__block {
+		width: 50%;
+		flex: 0 0 50%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+	}
+
+	.doctors__name {
+		font-size: 14px;
+	}
+
+	.patient-photos {
+		margin: 0 -10px -20px;
+	}
+
+	.patient-photo {
+		margin: 0 10px 20px;
+		width: calc(33.33% - 20px);
+	}
+
+	.up-w__table {
+		display: block;
+	}
+
+	.up-w__row {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.up-w__cell+.up-w__cell {
+		padding-left: 0;
+	}
+
+	.up-p__block {
+		width: calc(100% - 20px);
+	}
+
+	.usl-advantage {
+		width: 100%;
+	}
+
+	.history-right__title {
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and(max-width: 450px) {
+	.benefits__container {
+		margin-top: 25px;
+	}
+
+	.benefits__subtitle {
+		font-size: 16px;
+	}
+
+	.tabs__filter {
+		flex-grow: 1;
+	}
+
+	.benefits__item {
+		text-align: center;
+		width: 100%;
+		flex: 0 0 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.accordion__content.map {
+		padding: 0;
+	}
+
+	.accordion__content.map .map__content {
+		padding: 0;
+	}
+
+	.serts-page__item {
+		width: 33.333%;
+		flex: 0 0 33.333%;
+		padding: 0 10px;
+		margin-top: 20px;
+	}
+
+	.serv-text-type p {
+		font-size: 14px;
+	}
+
+	.patitent-desc-title {
+		margin-top: 30px;
+	}
+
+	.serv-text-type ul li::before {
+		top: 6px;
+	}
+
+	.serv-text-type ol li::before,
+	.serv-text-type ul li::before {
+		left: 8px;
+	}
+
+	.serv-text-type ol li,
+	.serv-text-type ul li {
+		list-style: none;
+		position: relative;
+		padding-left: 30px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.5;
+		color: #13070c;
+	}
+
+	.quality-sert {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.quality-sert__text {
+		width: 100%;
+		margin-left: 0;
+		padding-left: 0;
+		border-left: 0;
+		margin-top: 15px;
+		text-align: center;
+	}
+}
+
+@media screen and(max-width: 400px) {
+	.map__right {
+		padding: 15px;
+	}
+
+	.map .container {
+		max-width: 100%;
+	}
+
+	.accordion__title {
+		padding: 10px 35px 10px 10px;
+		font-size: 15px;
+	}
+
+	.accordion__title::after {
+		right: 10px;
+	}
+
+	.patient-photo {
+		width: calc(50% - 20px);
+	}
+
+	.prices__cell {
+		font-size: 14px;
+	}
+
+	.history__container {
+		margin-top: 25px;
+	}
+
+	.more-articles-item {
+		font-size: 14px;
+	}
+
+	.more-articles {
+		margin-top: 30px;
 	}
 }
 
@@ -191,4 +812,38 @@
 		max-width: 100%;
 		min-width: unset;
 	}
+
+	.dreviews__right {
+		font-size: 14px;
+	}
+
+	.prices__cell {
+		min-width: 35px;
+	}
+
+	.prices__cell:nth-child(2) {
+		max-width: calc(100% - 35px);
+	}
+
+	.prices__cell:nth-child(3) {
+		padding-left: 40px;
+	}
+
+	.h2 {
+		font-size: 22px;
+	}
+
+	.up__text-style {
+		font-size: 14px;
+	}
+
+	.up-w__cell {
+		padding-top: 15px;
+	}
+
+	.history__cats {
+		font-size: 14px;
+	}
+
+
 }

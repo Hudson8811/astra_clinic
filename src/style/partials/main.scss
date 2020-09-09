@@ -252,3 +252,10 @@ body {
 .mt5{
 	margin-top: 5px;
 }
+
+.tabs__filter.active{
+	pointer-events: none;
+}
+.bg-white{
+	background: #ffffff;
+}

@@ -1,5 +1,5 @@
 .patient-photos {
-	margin: 0 -16px -32px;
+	margin: 0 -15px -30px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -7,8 +7,8 @@
 .patient-photo {
 	display: block;
 	position: relative;
-	margin: 0 16px 32px;
-	width: calc(33.33% - 32px);
+	margin: 0 15px 30px;
+	width: calc(33.33% - 30px);
 
 	img {
 		display: block;

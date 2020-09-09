@@ -96,7 +96,9 @@
 
 .up-p__flex {
 	display: flex;
-	margin: 0 -16px -32px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -15px -30px;
 
 	&--usluga-spaces {
 		margin-top: 45px;
@@ -109,8 +111,8 @@
 	align-items: center;
 	flex-direction: column;
 	box-sizing: border-box;
-	width: calc(33.33% - 32px);
-	margin: 0 16px 32px;
+	width: calc(33.33% - 30px);
+	margin: 0 15px 30px;
 	padding: 39px 10px 40px;
 	background: #ffffff;
 
@@ -150,6 +152,8 @@
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 135%;
+	display: block;
+	flex-grow: 1;
 }
 
 .up-p__btn {
@@ -280,6 +284,7 @@
 		height: 37px;
 		content: '';
 		background: url(../img/advantage.svg) no-repeat center center;
+		background-size: contain;
 	}
 }
 
@@ -362,14 +367,14 @@
 .useful-information {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 41px -16px -32px;
+	margin: 41px -15px -32px;
 }
 
 .use-inf-video {
-	margin: 0 16px 32px;
+	margin: 0 15px 32px;
 	display: block;
 	width: 436px;
-	max-width: calc(50% - 36px);
+	max-width: calc(50% - 30px);
 	position: relative;
 	transition-duration: .2s;
 
