@@ -1,10 +1,51 @@
 footer.footer
-    .footer__container.container.container--dpr
-        .footer__left
-            .footer__copy Сеть стоматологических клиник © «Астра», 2020
-            a(href="").footer__politic Политика конфиденциальности
+	.footer__container.container.container--dpr
+		.footer__left
+			.footer__copy Сеть стоматологических клиник © «Астра», 2020
+			a(href="").footer__politic Политика конфиденциальности
 
-        .footer__dev
-            span Создание сайта:
-            a(href="" target="_blank")
-                img(src="img/seo.svg")
+		.footer__dev
+			span Создание сайта:
+			a(href="" target="_blank")
+				img(src="img/seo.svg")
+
+
+#appointment-modal.appointment-modal
+	form.form-appointment
+		.form-app-title Запись на прием
+		.form-app-main
+			.inp-row#inp-row-app-select
+				select.custom-select.js-niceselect
+					option(value="" disabled selected) Выберите филиал
+					option(value="Адмиралтейская") Адмиралтейская
+					option(value="Тех. институт") Тех. институт
+					option(value="Политехническая") Политехническая
+			.inp-row
+				input.custom-inp(type="text", placeholder="Имя")
+			.inp-row
+				input.custom-inp(type="text", placeholder="Номер телефона")
+			.inp-row
+				input.custom-inp(type="text", placeholder="Email")
+			.inp-row
+				textarea.custom-inp.js-auto-size(type="text", placeholder="Комментарий")
+			.inp-row
+				.wpcf7-acceptance
+				.wpcf7-list-item
+					label
+						input.custom-chb(type="checkbox")
+						span.wpcf7-list-item-label
+							span.acceptance-text Я принимаю условия
+								a(href="")  Пользовательського соглашения
+			button.btn.btn-send-appointment(type="submit") ОТПРАВИТЬ ЗАЯВКУ
+
+#comment-modal.appointment-modal
+	form.form-appointment
+		.form-app-title Отзыв
+		.form-app-main
+			.inp-row
+				input.custom-inp(type="text", placeholder="Имя")
+			.inp-row
+				input.custom-inp(type="text", placeholder="Email")
+			.inp-row
+				textarea.custom-inp.js-auto-size(type="text", placeholder="Текст отзыва")
+			button.btn.btn-send-appointment(type="submit") Оставить отзыв

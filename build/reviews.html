@@ -129,7 +129,7 @@
           </nav>
           <div class="header-tablet-grow-center"></div>
           <div class="header-socials"><a class="header-socials__item" href=""><img src="img/soc-inst.svg" alt=""></a><a class="header-socials__item" href=""><img src="img/soc-yt.svg" alt=""></a><a class="header-socials__item" href=""><img src="img/soc-fb.svg" alt=""></a></div>
-          <div class="header-offer-info"><a class="header-offer-info__link" href="">Запись на прием</a>
+          <div class="header-offer-info"><a class="header-offer-info__link" href="call-appointment-modal-tech">Запись на прием</a>
             <div class="header-offer-info__desc">5% скидка при записи онлайн</div>
           </div>
         </div>
@@ -247,6 +247,59 @@
           <div class="footer__dev"><span>Создание сайта:</span><a href="" target="_blank"><img src="img/seo.svg"></a></div>
         </div>
       </footer>
+      <div class="appointment-modal" id="appointment-modal">
+        <form class="form-appointment">
+          <div class="form-app-title">Запись на прием</div>
+          <div class="form-app-main">
+            <div class="inp-row" id="inp-row-app-select">
+              <select class="custom-select js-niceselect">
+                <option value="" disabled selected>Выберите филиал</option>
+                <option value="Адмиралтейская">Адмиралтейская</option>
+                <option value="Тех. институт">Тех. институт</option>
+                <option value="Политехническая">Политехническая</option>
+              </select>
+            </div>
+            <div class="inp-row">
+              <input class="custom-inp" type="text" placeholder="Имя">
+            </div>
+            <div class="inp-row">
+              <input class="custom-inp" type="text" placeholder="Номер телефона">
+            </div>
+            <div class="inp-row">
+              <input class="custom-inp" type="text" placeholder="Email">
+            </div>
+            <div class="inp-row">
+              <textarea class="custom-inp js-auto-size" type="text" placeholder="Комментарий"></textarea>
+            </div>
+            <div class="inp-row">
+              <div class="wpcf7-acceptance"></div>
+              <div class="wpcf7-list-item">
+                <label>
+                  <input class="custom-chb" type="checkbox"><span class="wpcf7-list-item-label"><span class="acceptance-text">Я принимаю условия<a href=""> Пользовательського соглашения</a></span></span>
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-send-appointment" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+          </div>
+        </form>
+      </div>
+      <div class="appointment-modal" id="comment-modal">
+        <form class="form-appointment">
+          <div class="form-app-title">Отзыв</div>
+          <div class="form-app-main">
+            <div class="inp-row">
+              <input class="custom-inp" type="text" placeholder="Имя">
+            </div>
+            <div class="inp-row">
+              <input class="custom-inp" type="text" placeholder="Email">
+            </div>
+            <div class="inp-row">
+              <textarea class="custom-inp js-auto-size" type="text" placeholder="Текст отзыва"></textarea>
+            </div>
+            <button class="btn btn-send-appointment" type="submit">Оставить отзыв</button>
+          </div>
+        </form>
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>

@@ -5,7 +5,12 @@ $(document).ready(function () {
         var cat = $(this).data('cat');
         if (cat !== 'all') {
             $('.review__item').addClass('hidden');
-            $('.review__item[data-cat="' + cat + '"]').removeClass('hidden');
+
+			$('.review__item').each(function () {
+				if ($(this).attr('data-cat').indexOf(cat) != -1) {
+					$(this).removeClass('hidden');
+				}
+			})
         } else {
             $('.review__item').removeClass('hidden');
         }

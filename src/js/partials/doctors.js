@@ -17,7 +17,11 @@ $(document).ready(function () {
         var cat = $(this).data('cat');
         if(cat !== 'all'){
             $('.serts-page__block').addClass('hidden');
-            $('.serts-page__block[data-cat="'+cat+'"]').removeClass('hidden');
+			$('.serts-page__block').each(function () {
+				if ($(this).attr('data-cat').indexOf(cat) != -1) {
+					$(this).removeClass('hidden');
+				}
+			})
         } else{
             $('.serts-page__block').removeClass('hidden');
         }
