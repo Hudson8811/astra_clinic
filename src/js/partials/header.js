@@ -177,7 +177,7 @@ function changeMenuState() {
 	if (window.matchMedia("(max-width: 979px)").matches) {
 		newState = 'mobile';
 	} else {
-		if (window.matchMedia("(min-width: 1501px)").matches) {
+		if (window.matchMedia("(min-width: 1350px)").matches) {
 			newState = 'desktop';
 		} else {
 			newState = 'tablet';

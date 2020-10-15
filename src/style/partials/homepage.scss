@@ -6,7 +6,7 @@
 	flex-direction: column;
 	min-height: 100vh;
 
-	@include _1500 {
+	@include _1399 {
 		min-height: calc(100vh - 106px);
 	}
 

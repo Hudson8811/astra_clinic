@@ -44,6 +44,9 @@ body {
 	justify-content: space-between;
 
 
+	@include _min1400 {
+		margin-left: 242px;
+	}
 	@include _min1501 {
 		margin-left: 359px;
 	}

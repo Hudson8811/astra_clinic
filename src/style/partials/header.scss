@@ -6,7 +6,7 @@
 }
 
 .header-container {
-	@include _1500 {
+	@include _1399 {
 		width: 1240px;
 		height: 106px;
 		margin: 0 auto;
@@ -31,7 +31,7 @@
 	display: flex;
 	height: 100%;
 
-	@include _min1501 {
+	@include _min1400 {
 
 		position: fixed;
 		left: 0;
@@ -40,14 +40,16 @@
 		align-items: center;
 		flex-direction: column;
 		box-sizing: border-box;
-		width: 359px;
+		width: 242px;
 		height: 100vh;
 		padding: 40px 30px;
 		background: #F3EBE0;
 		justify-content: space-between;
 	}
-
-	@include _1500 {
+	@include _min1501 {
+		width: 359px;
+	}
+	@include _1399 {
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
@@ -65,12 +67,12 @@
 			width: auto;
 		}
 
-		@include _min1501 {
+		@include _min1400 {
 			height: 66px;
 		}
 	}
 
-	@include _1500 {
+	@include _1399 {
 		margin-right: 56px;
 	}
 
@@ -81,7 +83,7 @@
 }
 
 .header-main-menu-wrap {
-	@include _1500 {
+	@include _1399 {
 		flex-grow: 1;
 		height: 100%;
 
@@ -94,7 +96,7 @@
 }
 
 .header-socials {
-	@include _min1501 {
+	@include _min1400 {
 
 		display: flex;
 		align-items: center;
@@ -124,7 +126,7 @@
 		}
 	}
 
-	@include _1500 {
+	@include _1399 {
 		display: none;
 	}
 }
@@ -138,9 +140,9 @@
 	padding-top: 23px;
 	border-top: 1px solid #E8E0D6;
 
-	@include _min1501 {}
+	@include _min1400 {}
 
-	@include _1500 {
+	@include _1399 {
 		margin-top: 0;
 		padding-top: 0;
 		border-top: 0;
@@ -166,9 +168,9 @@
 
 		&:focus {}
 
-		@include _min1501 {}
+		@include _min1400 {}
 
-		@include _1500 {
+		@include _1399 {
 			font-size: 18px;
 			line-height: 22px;
 			text-align: left;
@@ -196,9 +198,9 @@
 		font-size: 18px;
 		line-height: 125%;
 
-		@include _min1501 {}
+		@include _min1400 {}
 
-		@include _1500 {
+		@include _1399 {
 			margin-top: 5px;
 			font-size: 18px;
 			line-height: 125%;
@@ -257,7 +259,7 @@ img {}
 	max-width: 100%;
 
 
-	@include _1500 {
+	@include _1399 {
 		max-width: 100%;
 		position: absolute;
 		margin-left: 1px;
@@ -324,7 +326,7 @@ img {}
 	display: block;
 	list-style: none;
 
-	@include _1500 {
+	@include _1399 {
 		&+.hmm-item {
 
 			margin-top: 29px;
@@ -346,7 +348,7 @@ img {}
 		}
 	}
 
-	@include _min1501 {
+	@include _min1400 {
 		width: 199px;
 		border-bottom: 1px solid #E8E0D6;
 
@@ -437,9 +439,9 @@ img {}
 .hmm-sub-menu {
 	position: fixed;
 	top: 0;
-	left: 359px;
+	left: 242px;
 	box-sizing: border-box;
-	max-width: calc(98vw - 359px);
+	max-width: calc(98vw - 242px);
 	height: 100%;
 	padding: 52px;
 	pointer-events: none;
@@ -459,9 +461,13 @@ img {}
 		pointer-events: all;
 	}
 
-	@include _min1501 {}
+	@include _min1400 {}
+	@include _min1501 {
+		max-width: calc(98vw - 359px);
+		left: 359px;
+	}
 
-	@include _1500 {
+	@include _1399 {
 		z-index: 1;
 		padding: 54px 56px;
 
@@ -544,11 +550,11 @@ img {}
 .hmm-sub-menu__services {
 	z-index: 1;
 
-	@include _min1501 {
+	@include _min1400 {
 		width: 808px;
 	}
 
-	@include _1500 {
+	@include _1399 {
 		padding: 32px;
 		width: 100%;
 		top: 106px;
@@ -580,9 +586,9 @@ img {}
 	border: 1px solid #D8D0C8;
 	border-bottom: none;
 
-	@include _min1501 {}
+	@include _min1400 {}
 
-	@include _1500 {
+	@include _1399 {
 		height: unset;
 		width: 100%;
 	}
@@ -604,7 +610,7 @@ img {}
 	border-bottom: 1px solid #d8d0c8;
 
 
-	@include _min1501 {
+	@include _min1400 {
 		&:not(:nth-child(3n)) {
 			border-right: 1px solid #d8d0c8;
 		}
@@ -657,7 +663,7 @@ img {}
 	&--empty-for-desktop {}
 
 
-	@include _1500 {
+	@include _1399 {
 		display: block;
 		width: 20%;
 		min-width: 20%;
@@ -792,11 +798,11 @@ img {}
 		background: #ffffff;
 	}
 
-	@include _min1501 {
+	@include _min1400 {
 		display: none !important;
 	}
 
-	@include _1500 {}
+	@include _1399 {}
 
 	@include _979 {
 		border-right: 0;
@@ -896,7 +902,7 @@ img {}
 }
 
 .header-ph {
-	@include _min1501 {
+	@include _min1400 {
 		display: none !important;
 	}
 
